@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>URL Shortener Affiliate Program - T.LY</title>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <link href="{{ url_for('static', filename='css/bootstrap.min.css') }}" rel="stylesheet" type="text/css"/>
+    <link rel="icon" href="{{ url_for('static', filename='img/tly-high-resolution-favicon.png') }}" type="image/png"
+          sizes="32x32">
+    <style>
+        .size {
+            max-width: 200px;
+        }
+    </style>
+</head>
+
+<body>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-sm">
+        <a class="navbar-brand" href="">
+            <img src="{{ url_for('static', filename='img/tly-high-resolution-logo.png') }}" height="35" alt="">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                       data-bs-toggle="dropdown" aria-expanded="false">
+                        Products
+                    </a>
+                    <ul class="dropdown-menu py-2" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item py-3" href="#"><i class="fa-solid fa-link"></i> Link
+                            Management</a></li>
+                        <li><a class="dropdown-item py-3" href="#"><i class="fa-solid fa-square-arrow-up-right"></i>
+                            OneLinks</a>
+                        </li>
+                        <li><a class="dropdown-item py-3" href="#"><i class="fa-solid fa-qrcode"></i> QR Code
+                            Generator</a></li>
+                        <li><a class="dropdown-item py-3" href="#"><i class="fa-brands fa-chrome"></i> Link
+                            Shortener
+                            Extension</a></li>
+                        <li><a class="dropdown-item py-3" href="#"><i class="fa-solid fa-image"></i> Screenshot
+                            Website</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                       data-bs-toggle="dropdown" aria-expanded="false">
+                        Resources
+                    </a>
+                    <ul class="dropdown-menu py-2" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item py-3" href="#"><i class="fa-solid fa-rss"></i> Blog</a></li>
+                        <li><a class="dropdown-item py-3" href="#"><i class="fa-solid fa-chevron-right"></i><b>_</b>
+                            API
+                            Documentation</a></li>
+                        <li><a class="dropdown-item py-3" href="#"><i class="fa-solid fa-circle-question"></i>
+                            Frequently Asked
+                            Questions</a></li>
+                        <li><a class="dropdown-item py-3" href="#"><i class="fa-solid fa-handshake"></i> Affiliate
+                            Program</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                       data-bs-toggle="dropdown" aria-expanded="false">
+                        Comparisons
+                    </a>
+                    <ul class="dropdown-menu py-2" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item py-3" href="#"><i class="fa-solid fa-plus"></i> T.LY vs
+                            Bitly</a></li>
+                        <li><a class="dropdown-item py-3" href="#"><i class="fa-solid fa-link"></i> Bitly
+                            Alternatives</a></li>
+                        <li><a class="dropdown-item py-3" href="#"><i class="fa-brands fa-google"></i> Google URL
+                            Shortener
+                            Alternatives</a></li>
+                        <li><a class="dropdown-item py-3" href="#"><i class="fa-solid fa-compress"></i> T.LY vs
+                            TinyURL</a></li>
+                        <li><a class="dropdown-item py-3" href="#"><i class="fa-solid fa-list-ul"></i> Best URL
+                            Shortener API</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+            <a href=""
+               class="link-light link-opacity-50-hover link-underline-opacity-50-hover link-underline-opacity-0">Login</a>
+            <button type="button" class="btn btn-warning ms-3">Sign Up</button>
+        </div>
+    </div>
+</nav>
+<div class="container py-2">
+    <div class="row">
+        <div class="col-6 mx-auto text-center mt-5">
+            <h1>Be Our Affiliate. Earn 20% Commission!</h1>
+            <p class="lead">Partner with T.LY to earn a recurring <b>20% commission</b> every month for a year!</p>
+            <div class="text-center pb-3">
+                <a href="" role="button" class="btn btn-warning"> Join Affiliate Program</a>
+            </div>
+        </div>
+    </div>
+    <div class="row mt-5">
+        <div class="col-5 mx-auto text-center">
+            <img src="{{ url_for('static', filename='img/download.png') }}" class="img-fluid mb-4 size" alt="">
+            <p>Monthly payout via PayPal.<br>No minimum threshold!</p>
+        </div>
+        <div class="col-5 mx-auto text-center">
+            <img src="{{ url_for('static', filename='img/rewardful.svg') }}" class="img-fluid mb-4 size" alt="">
+            <p>Full featured dashboard<br>(Powered by Rewardful)</p>
+        </div>
+    </div>
+    <hr class="my-5">
+    <div class="row mb-5">
+        <div class="col-5 mx-auto">
+            <h2 class="text-center">How it works</h2>
+            <ul class="lead ps-0 list-unstyled">
+                <li><i class="fa-solid fa-circle-check"></i> Sign up our affiliate program and get a unique link
+                    that can be shared
+                </li>
+                <li><i class="fa-solid fa-circle-check"></i> Share your link with your friends, customers,
+                    clients...
+                </li>
+                <li><i class="fa-solid fa-circle-check"></i> You'll get 20% recurring commission for every
+                    successful referral
+                </li>
+                <li><i class="fa-solid fa-circle-check"></i> We have an affiliate dashboard where you can view your
+                    total visitors, leads, and conversions. You'll also be able to see how much commission you've
+                    earned.
+                </li>
+                <li><i class="fa-solid fa-circle-check"></i> You will be notified, by email, whenever you earn a new
+                    commission.
+                </li>
+                <li><i class="fa-solid fa-circle-check"></i> The payments will be made monthly through PayPal.</li>
+            </ul>
+        </div>
+    </div>
+    <hr class="my-5">
+    <div class="row">
+        <div class="col text-center">
+            <h2>Ready to partner with us?</h2>
+            <div class="text-center my-5">
+                <a href="" role="button" class="btn btn-warning">Get Started Today</a>
+            </div>
+        </div>
+    </div>
+</div>
+<footer class="footer bg-dark py-4 mt-2">
+    <div class="container">
+        <div class="row">
+            <div class="col-4 text-light">
+                <h4>Features</h4>
+                <ul class="list-unstyled mb-0">
+                    <li class="pb-2"><a href=""
+                                        class="link-light link-underline-opacity-75-hover link-underline-opacity-0">Extension</a>
+                    </li>
+                    <li class="pb-2"><a href=""
+                                        class="link-light link-underline-opacity-75-hover link-underline-opacity-0">API
+                        Docs</a></li>
+                    <li class="pb-2"><a href=""
+                                        class="link-light link-underline-opacity-75-hover link-underline-opacity-0">OR
+                        Code Generator</a></li>
+                    <li class="pb-2"><a href=""
+                                        class="link-light link-underline-opacity-75-hover link-underline-opacity-0">Tools</a>
+                    </li>
+                    <li class="pb-2"><a href=""
+                                        class="link-light link-underline-opacity-75-hover link-underline-opacity-0">Sign
+                        Up</a></li>
+                </ul>
+            </div>
+            <div class="col-4 text-light">
+                <h4>Resources</h4>
+                <ul class="list-unstyled mb-0">
+                    <li class="pb-2"><a href=""
+                                        class="link-light link-underline-opacity-75-hover link-underline-opacity-0">Report
+                        Link</a></li>
+                    <li class="pb-2"><a href=""
+                                        class="link-light link-underline-opacity-75-hover link-underline-opacity-0">FAQ</a>
+                    </li>
+                    <li class="pb-2"><a href=""
+                                        class="link-light link-underline-opacity-75-hover link-underline-opacity-0">Affiliates</a>
+                    </li>
+                    <li class="pb-2"><a href=""
+                                        class="link-light link-underline-opacity-75-hover link-underline-opacity-0">Privacy</a>
+                    </li>
+                    <li class="pb-2"><a href=""
+                                        class="link-light link-underline-opacity-75-hover link-underline-opacity-0">Terms</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-4 text-light">
+                <h4>Company</h4>
+                <ul class="list-unstyled mb-0">
+                    <li class="pb-2"><a href=""
+                                        class="link-light link-underline-opacity-75-hover link-underline-opacity-0">About</a>
+                    </li>
+                    <li class="pb-2"><a href=""
+                                        class="link-light link-underline-opacity-75-hover link-underline-opacity-0">Blog</a>
+                    </li>
+                    <li class="pb-2"><a href=""
+                                        class="link-light link-underline-opacity-75-hover link-underline-opacity-0">Contact</a>
+                    </li>
+                    <li class="pb-2"><a href=""
+                                        class="link-light link-underline-opacity-75-hover link-underline-opacity-0">Twitter</a>
+                    </li>
+                    <li class="pb-2"><a href=""
+                                        class="link-light link-underline-opacity-75-hover link-underline-opacity-0">Facebook</a>
+                    </li>
+                    <li class="pb-2"><a href=""
+                                        class="link-light link-underline-opacity-75-hover link-underline-opacity-0">LinkedIn</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
+<script src="{{ url_for('static', filename='js/bootstrap.bundle.min.js') }}"></script>
+<script src="https://kit.fontawesome.com/f3d396c665.js" crossorigin="anonymous"></script>
+</body>
+</html>

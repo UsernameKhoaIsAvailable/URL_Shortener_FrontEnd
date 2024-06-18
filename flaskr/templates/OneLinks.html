@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>OneLinks - T.LY</title>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <link href="{{ url_for('static', filename='css/bootstrap.min.css') }}" rel="stylesheet" type="text/css"/>
+    <link rel="icon" href="{{ url_for('static', filename='img/tly-high-resolution-favicon.png') }}" type="image/png"
+          sizes="32x32">
+</head>
+
+<body>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-sm">
+        <a class="navbar-brand" href="">
+            <img src="{{ url_for('static', filename='img/tly-high-resolution-logo.png') }}" height="35" alt="">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                       data-bs-toggle="dropdown" aria-expanded="false">
+                        Products
+                    </a>
+                    <ul class="dropdown-menu py-2" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item py-3" href="#"><i class="fa-solid fa-link"></i> Link
+                            Management</a></li>
+                        <li><a class="dropdown-item py-3" href="#"><i class="fa-solid fa-square-arrow-up-right"></i>
+                            OneLinks</a>
+                        </li>
+                        <li><a class="dropdown-item py-3" href="#"><i class="fa-solid fa-qrcode"></i> QR Code
+                            Generator</a></li>
+                        <li><a class="dropdown-item py-3" href="#"><i class="fa-brands fa-chrome"></i> Link
+                            Shortener
+                            Extension</a></li>
+                        <li><a class="dropdown-item py-3" href="#"><i class="fa-solid fa-image"></i>
+                            Screenshot
+                            Website</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                       data-bs-toggle="dropdown" aria-expanded="false">
+                        Resources
+                    </a>
+                    <ul class="dropdown-menu py-2" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item py-3" href="#"><i class="fa-solid fa-rss"></i> Blog</a>
+                        </li>
+                        <li><a class="dropdown-item py-3" href="#"><i class="fa-solid fa-chevron-right"></i><b>_</b>
+                            API
+                            Documentation</a></li>
+                        <li><a class="dropdown-item py-3" href="#"><i class="fa-solid fa-circle-question"></i>
+                            Frequently Asked
+                            Questions</a></li>
+                        <li><a class="dropdown-item py-3" href="#"><i class="fa-solid fa-handshake"></i>
+                            Affiliate
+                            Program</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                       data-bs-toggle="dropdown" aria-expanded="false">
+                        Comparisons
+                    </a>
+                    <ul class="dropdown-menu py-2" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item py-3" href="#"><i class="fa-solid fa-plus"></i> T.LY vs
+                            Bitly</a></li>
+                        <li><a class="dropdown-item py-3" href="#"><i class="fa-solid fa-link"></i> Bitly
+                            Alternatives</a></li>
+                        <li><a class="dropdown-item py-3" href="#"><i class="fa-brands fa-google"></i> Google
+                            URL
+                            Shortener
+                            Alternatives</a></li>
+                        <li><a class="dropdown-item py-3" href="#"><i class="fa-solid fa-compress"></i> T.LY
+                            vs
+                            TinyURL</a></li>
+                        <li><a class="dropdown-item py-3" href="#"><i class="fa-solid fa-list-ul"></i> Best
+                            URL
+                            Shortener API</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+            <a href=""
+               class="link-light link-opacity-50-hover link-underline-opacity-50-hover link-underline-opacity-0">Login</a>
+            <button type="button" class="btn btn-warning ms-3">Sign Up</button>
+        </div>
+    </div>
+</nav>
+<div class="container d-grid gap-5 mt-3">
+    <div class="row">
+        <div class="col-7 my-auto">
+            <h1>One Links</h1>
+            <p class="lead">Imagine how much easier it would be to share all your content with One Link! One Links
+                allows you to connect every social media profile, website and more. It's perfect for businesses who
+                want their message across multiple platforms without having multiple pages or accounts on each
+                network they are active in - just One Link that updates whenever anything changes online!</p>
+            <ul class="ps-0 mt-3">
+                <li class="list-unstyled"><i class="fa-solid fa-circle-check"></i> Easily add bio links in all your
+                    social media profiles
+                </li>
+                <li class="list-unstyled mt-1"><i class="fa-solid fa-circle-check"></i> Perfect for TikTok,
+                    Instagram, Twitter, and more
+                </li>
+                <li class="list-unstyled mt-1"><i class="fa-solid fa-circle-check"></i> Create
+                    Custom Short Branded Links
+                </li>
+                <li class="list-unstyled mt-1"><i class="fa-solid fa-circle-check"></i> Create custom short bio
+                    links
+                </li>
+                <li class="list-unstyled mt-1"><i class="fa-solid fa-circle-check"></i> Update URLs whenever you
+                    need to change their destination
+                </li>
+                <li class="list-unstyled mt-1"><i class="fa-solid fa-circle-check"></i> Manage multiple social media
+                    profiles
+                </li>
+            </ul>
+            <div class="text-center pt-4"><a href="" type="button" class="btn btn-warning btn-lg">Get Started</a>
+            </div>
+        </div>
+        <div class="col-5">
+            <a href="">
+                <img src="{{ url_for('static', filename='img/onelink-example-1.png') }}" class="img-fluid" alt="">
+            </a>
+        </div>
+    </div>
+    <hr class="my-5">
+    <div class="row mb-5">
+        <div class="col-6">
+            <a href="">
+                <img src="{{ url_for('static', filename='img/one-links-custom-domain.jpeg') }}"
+                     class="img-fluid rounded" alt="">
+            </a>
+        </div>
+        <div class="col-6 my-auto">
+            <h2>Custom Domains</h2>
+            <p class="lead">Make your links powerful marketing assets. Custom domains replace t.ly
+                with your own domain name, making your links consistently recognizable across
+                channels. They're so powerful, businesses that use them get up to 34% more
+                clicks.</p>
+            <div class="text-center pb-3"><a href="" type="button" class="btn btn-dark">Start
+                Branding Short Links</a></div>
+            <ul class="ps-0 mt-3">
+                <li class="list-unstyled"><i class="fa-solid fa-circle-check"></i> Use custom
+                    domains for your links
+                </li>
+                <li class="list-unstyled mt-1"><i class="fa-solid fa-circle-check"></i> Make
+                    your links recognizable and consistent across channels
+                </li>
+                <li class="list-unstyled mt-1"><i class="fa-solid fa-circle-check"></i> Increase
+                    clicks on your links by up to 34%
+                </li>
+                <li class="list-unstyled mt-1"><i class="fa-solid fa-circle-check"></i> Create a
+                    more consistent, branded experience with your links
+                </li>
+                <li class="list-unstyled mt-1"><i class="fa-solid fa-circle-check"></i> Build
+                    trust and credibility with your audience
+                </li>
+            </ul>
+
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            <div class="bg-secondary-subtle text-center py-3 rounded">
+                <p class="mb-0">Looking for additional features? <a href=""
+                                                                    class="link-warning link-opacity-75-hover link-underline-opacity-75-hover link-underline-opacity-0">Sign
+                    Up Here</a></p>
+            </div>
+        </div>
+    </div>
+
+</div>
+<footer class="footer bg-dark py-4 mt-4">
+    <div class="container">
+        <div class="row">
+            <div class="col-4 text-light">
+                <h4>Features</h4>
+                <ul class="list-unstyled mb-0">
+                    <li class="pb-2"><a href=""
+                                        class="link-light link-underline-opacity-75-hover link-underline-opacity-0">Extension</a>
+                    </li>
+                    <li class="pb-2"><a href=""
+                                        class="link-light link-underline-opacity-75-hover link-underline-opacity-0">API
+                        Docs</a>
+                    </li>
+                    <li class="pb-2"><a href=""
+                                        class="link-light link-underline-opacity-75-hover link-underline-opacity-0">OR
+                        Code
+                        Generator</a></li>
+                    <li class="pb-2"><a href=""
+                                        class="link-light link-underline-opacity-75-hover link-underline-opacity-0">Tools</a>
+                    </li>
+                    <li class="pb-2"><a href=""
+                                        class="link-light link-underline-opacity-75-hover link-underline-opacity-0">Sign
+                        Up</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-4 text-light">
+                <h4>Resources</h4>
+                <ul class="list-unstyled mb-0">
+                    <li class="pb-2"><a href=""
+                                        class="link-light link-underline-opacity-75-hover link-underline-opacity-0">Report
+                        Link</a></li>
+                    <li class="pb-2"><a href=""
+                                        class="link-light link-underline-opacity-75-hover link-underline-opacity-0">FAQ</a>
+                    </li>
+                    <li class="pb-2"><a href=""
+                                        class="link-light link-underline-opacity-75-hover link-underline-opacity-0">Affiliates</a>
+                    </li>
+                    <li class="pb-2"><a href=""
+                                        class="link-light link-underline-opacity-75-hover link-underline-opacity-0">Privacy</a>
+                    </li>
+                    <li class="pb-2"><a href=""
+                                        class="link-light link-underline-opacity-75-hover link-underline-opacity-0">Terms</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-4 text-light">
+                <h4>Company</h4>
+                <ul class="list-unstyled mb-0">
+                    <li class="pb-2"><a href=""
+                                        class="link-light link-underline-opacity-75-hover link-underline-opacity-0">About</a>
+                    </li>
+                    <li class="pb-2"><a href=""
+                                        class="link-light link-underline-opacity-75-hover link-underline-opacity-0">Blog</a>
+                    </li>
+                    <li class="pb-2"><a href=""
+                                        class="link-light link-underline-opacity-75-hover link-underline-opacity-0">Contact</a>
+                    </li>
+                    <li class="pb-2"><a href=""
+                                        class="link-light link-underline-opacity-75-hover link-underline-opacity-0">Twitter</a>
+                    </li>
+                    <li class="pb-2"><a href=""
+                                        class="link-light link-underline-opacity-75-hover link-underline-opacity-0">Facebook</a>
+                    </li>
+                    <li class="pb-2"><a href=""
+                                        class="link-light link-underline-opacity-75-hover link-underline-opacity-0">LinkedIn</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
+<script src="{{ url_for('static', filename='js/bootstrap.bundle.min.js') }}"></script>
+<script src="https://kit.fontawesome.com/f3d396c665.js" crossorigin="anonymous"></script>
+</body>
+</html>

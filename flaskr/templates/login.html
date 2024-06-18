@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Login to Manage Your Short URLs with T.LY</T>
+    </title>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <link href="{{ url_for('static', filename='css/bootstrap.min.css') }}" rel="stylesheet" type="text/css"/>
+    <link rel="icon" href="{{ url_for('static', filename='img/tly-high-resolution-favicon.png') }}" type="image/png"
+          sizes="32x32">
+    <style>
+        .footer {
+            position: fixed;
+        }
+    </style>
+</head>
+
+<body>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-sm">
+        <a class="navbar-brand" href="">
+            src="{{ url_for('static', filename='img/tly-high-resolution-logo.png') }}" height="35">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                       data-bs-toggle="dropdown" aria-expanded="false">
+                        Products
+                    </a>
+                    <ul class="dropdown-menu py-2" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item py-3" href="#"><i class="fa-solid fa-link"></i> Link
+                            Management</a></li>
+                        <li><a class="dropdown-item py-3" href="#"><i class="fa-solid fa-square-arrow-up-right"></i>
+                            OneLinks</a></li>
+                        <li><a class="dropdown-item py-3" href="#"><i class="fa-solid fa-qrcode"></i> QR Code
+                            Generator</a></li>
+                        <li><a class="dropdown-item py-3" href="#"><i class="fa-brands fa-chrome"></i> Link
+                            Shortener Extension</a></li>
+                        <li><a class="dropdown-item py-3" href="#"><i class="fa-solid fa-image"></i> Screenshot
+                            Website</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                       data-bs-toggle="dropdown" aria-expanded="false">
+                        Resources
+                    </a>
+                    <ul class="dropdown-menu py-2" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item py-3" href="#"><i class="fa-solid fa-rss"></i> Blog</a></li>
+                        <li><a class="dropdown-item py-3" href="#"><i class="fa-solid fa-chevron-right"></i><b>_</b>
+                            API Documentation</a></li>
+                        <li><a class="dropdown-item py-3" href="#"><i class="fa-solid fa-circle-question"></i>
+                            Frequently Asked Questions</a></li>
+                        <li><a class="dropdown-item py-3" href="#"><i class="fa-solid fa-handshake"></i> Affiliate
+                            Program</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                       data-bs-toggle="dropdown" aria-expanded="false">
+                        Comparisons
+                    </a>
+                    <ul class="dropdown-menu py-2" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item py-3" href="#"><i class="fa-solid fa-plus"></i> T.LY vs
+                            Bitly</a></li>
+                        <li><a class="dropdown-item py-3" href="#"><i class="fa-solid fa-link"></i> Bitly
+                            Alternatives</a></li>
+                        <li><a class="dropdown-item py-3" href="#"><i class="fa-brands fa-google"></i> Google URL
+                            Shortener Alternatives</a></li>
+                        <li><a class="dropdown-item py-3" href="#"><i class="fa-solid fa-compress"></i> T.LY vs
+                            TinyURL</a></li>
+                        <li><a class="dropdown-item py-3" href="#"><i class="fa-solid fa-list-ul"></i> Best URL
+                            Shortener API</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <a href=""
+               class="link-light link-opacity-50-hover link-underline-opacity-50-hover link-underline-opacity-0">Login</a>
+            <button type="button" class="btn btn-warning ms-3">Sign Up</button>
+        </div>
+    </div>
+</nav>
+<div class="container my-2">
+    <div class="row justify-content-center">
+        <div class="col-lg-8">
+            <div class="card">
+                <div class="card-header p-3 bg-dark text-light">
+                    Login
+                </div>
+                <div class="card-body bg-body-secondary">
+                    <form>
+                        <div class="row">
+                            <div class="col-4 text-end my-auto">
+                                <label>E-Mail</label>
+                            </div>
+                            <div class="col-6">
+                                <input type="text" class="form-control shadow-sm">
+                            </div>
+                        </div>
+                        <div class="row mt-3">
+                            <div class="col-4 text-end my-auto">
+                                <label>Password</label>
+                            </div>
+                            <div class="col-6">
+                                <input type="text" class="form-control shadow-sm">
+                            </div>
+                        </div>
+                        <div class="row mt-3">
+                            <div class="col-6 offset-4">
+                                <button class="btn btn-dark">Login</button>
+                                <a href=""
+                                   class="btn btn-link link-warning link-underline-opacity-0 link-underline-opacity-75-hover link-opacity-75-hover">Forgot
+                                    Your Password?</a>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<footer class="footer bg-dark py-4 mt-2">
+    <div class="container">
+        <div class="row">
+            <div class="col-4 text-light">
+                <h4>Features</h4>
+                <ul class="list-unstyled mb-0">
+                    <li class="pb-2"><a href=""
+                                        class="link-light link-underline-opacity-75-hover link-underline-opacity-0">Extension</a>
+                    </li>
+                    <li class="pb-2"><a href=""
+                                        class="link-light link-underline-opacity-75-hover link-underline-opacity-0">API
+                        Docs</a>
+                    </li>
+                    <li class="pb-2"><a href=""
+                                        class="link-light link-underline-opacity-75-hover link-underline-opacity-0">OR
+                        Code
+                        Generator</a></li>
+                    <li class="pb-2"><a href=""
+                                        class="link-light link-underline-opacity-75-hover link-underline-opacity-0">Tools</a>
+                    </li>
+                    <li class="pb-2"><a href=""
+                                        class="link-light link-underline-opacity-75-hover link-underline-opacity-0">Sign
+                        Up</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-4 text-light">
+                <h4>Resources</h4>
+                <ul class="list-unstyled mb-0">
+                    <li class="pb-2"><a href=""
+                                        class="link-light link-underline-opacity-75-hover link-underline-opacity-0">Report
+                        Link</a></li>
+                    <li class="pb-2"><a href=""
+                                        class="link-light link-underline-opacity-75-hover link-underline-opacity-0">FAQ</a>
+                    </li>
+                    <li class="pb-2"><a href=""
+                                        class="link-light link-underline-opacity-75-hover link-underline-opacity-0">Affiliates</a>
+                    </li>
+                    <li class="pb-2"><a href=""
+                                        class="link-light link-underline-opacity-75-hover link-underline-opacity-0">Privacy</a>
+                    </li>
+                    <li class="pb-2"><a href=""
+                                        class="link-light link-underline-opacity-75-hover link-underline-opacity-0">Terms</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-4 text-light">
+                <h4>Company</h4>
+                <ul class="list-unstyled mb-0">
+                    <li class="pb-2"><a href=""
+                                        class="link-light link-underline-opacity-75-hover link-underline-opacity-0">About</a>
+                    </li>
+                    <li class="pb-2"><a href=""
+                                        class="link-light link-underline-opacity-75-hover link-underline-opacity-0">Blog</a>
+                    </li>
+                    <li class="pb-2"><a href=""
+                                        class="link-light link-underline-opacity-75-hover link-underline-opacity-0">Contact</a>
+                    </li>
+                    <li class="pb-2"><a href=""
+                                        class="link-light link-underline-opacity-75-hover link-underline-opacity-0">Twitter</a>
+                    </li>
+                    <li class="pb-2"><a href=""
+                                        class="link-light link-underline-opacity-75-hover link-underline-opacity-0">Facebook</a>
+                    </li>
+                    <li class="pb-2"><a href=""
+                                        class="link-light link-underline-opacity-75-hover link-underline-opacity-0">Linkedln</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
+<script src="{{ url_for('static', filename='js/bootstrap.bundle.min.js') }}"></script>
+<script src="https://kit.fontawesome.com/f3d396c665.js" crossorigin="anonymous"></script>
+</body>
+</html>

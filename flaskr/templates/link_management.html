@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Custom URL Shortener Link Management - T.LY</title>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <link href="{{ url_for('static', filename='css/bootstrap.min.css') }}" rel="stylesheet" type="text/css"/>
+    <link rel="icon" href="{{ url_for('static', filename='img/tly-high-resolution-favicon.png') }}" type="image/png"
+          sizes="32x32">
+</head>
+
+<body>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-sm">
+        <a class="navbar-brand" href="">
+            <img src="{{ url_for('static', filename='img/tly-high-resolution-logo.png') }}" height="35" alt="">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown"
+                       role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Products
+                    </a>
+                    <ul class="dropdown-menu py-2" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item py-3" href="#"><i
+                                class="fa-solid fa-link"></i> Link
+                            Management</a></li>
+                        <li><a class="dropdown-item py-3" href="#"><i
+                                class="fa-solid fa-square-arrow-up-right"></i>
+                            OneLinks</a>
+                        </li>
+                        <li><a class="dropdown-item py-3" href="#"><i
+                                class="fa-solid fa-qrcode"></i> QR Code
+                            Generator</a></li>
+                        <li><a class="dropdown-item py-3" href="#"><i
+                                class="fa-brands fa-chrome"></i> Link
+                            Shortener
+                            Extension</a></li>
+                        <li><a class="dropdown-item py-3" href="#"><i
+                                class="fa-solid fa-image"></i>
+                            Screenshot
+                            Website</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown"
+                       role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Resources
+                    </a>
+                    <ul class="dropdown-menu py-2" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item py-3" href="#"><i
+                                class="fa-solid fa-rss"></i> Blog</a>
+                        </li>
+                        <li><a class="dropdown-item py-3" href="#"><i
+                                class="fa-solid fa-chevron-right"></i><b>_</b>
+                            API
+                            Documentation</a></li>
+                        <li><a class="dropdown-item py-3" href="#"><i
+                                class="fa-solid fa-circle-question"></i>
+                            Frequently Asked
+                            Questions</a></li>
+                        <li><a class="dropdown-item py-3" href="#"><i
+                                class="fa-solid fa-handshake"></i>
+                            Affiliate
+                            Program</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown"
+                       role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Comparisons
+                    </a>
+                    <ul class="dropdown-menu py-2" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item py-3" href="#"><i
+                                class="fa-solid fa-plus"></i> T.LY vs
+                            Bitly</a></li>
+                        <li><a class="dropdown-item py-3" href="#"><i
+                                class="fa-solid fa-link"></i> Bitly
+                            Alternatives</a></li>
+                        <li><a class="dropdown-item py-3" href="#"><i
+                                class="fa-brands fa-google"></i> Google
+                            URL
+                            Shortener
+                            Alternatives</a></li>
+                        <li><a class="dropdown-item py-3" href="#"><i
+                                class="fa-solid fa-compress"></i> T.LY
+                            vs
+                            TinyURL</a></li>
+                        <li><a class="dropdown-item py-3" href="#"><i
+                                class="fa-solid fa-list-ul"></i> Best
+                            URL
+                            Shortener API</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+            <a href=""
+               class="link-light link-opacity-50-hover link-underline-opacity-50-hover link-underline-opacity-0">Login</a>
+            <button type="button" class="btn btn-warning ms-3">Sign Up</button>
+        </div>
+    </div>
+</nav>
+<div class="container d-grid gap-5 mt-3">
+    <div class="row">
+        <div class="col-6 my-auto">
+            <h1>Custom URL Shortener</h1>
+            <p class="lead">T.LY is the best short link management service to track, brand, and
+                share short URLs.</p>
+            <div class="text-center pb-3"><a href="" type="button"
+                                             class="btn btn-warning btn-lg">Get Started</a></div>
+            <ul class="ps-0 mt-3">
+                <li class="list-unstyled"><i class="fa-solid fa-circle-check"></i> Unlimited
+                    Clicks
+                </li>
+                <li class="list-unstyled mt-1"><i class="fa-solid fa-circle-check"></i> Track
+                    your Short Links with Detailed Analytics
+                </li>
+                <li class="list-unstyled mt-1"><i class="fa-solid fa-circle-check"></i> Create
+                    Custom Short Branded Links
+                </li>
+                <li class="list-unstyled mt-1"><i class="fa-solid fa-circle-check"></i> API to
+                    Generate Short Links
+                </li>
+                <li class="list-unstyled mt-1"><i class="fa-solid fa-circle-check"></i> Bulk CSV
+                    Import URLs
+                </li>
+                <li class="list-unstyled mt-1"><i class="fa-solid fa-circle-check"></i> Update
+                    URLs to change their Destination
+                </li>
+                <li class="list-unstyled mt-1"><i class="fa-solid fa-circle-check"></i> Team
+                    Management
+                </li>
+                <li class="list-unstyled mt-1"><i class="fa-solid fa-circle-check"></i> Smart
+                    URLs
+                </li>
+                <li class="list-unstyled mt-1"><i class="fa-solid fa-circle-check"></i> Zapier
+                    Integration
+                </li>
+                <li class="list-unstyled mt-1"><i class="fa-solid fa-circle-check"></i> Create
+                    Custom Trackable QR Codes
+                </li>
+                <li class="list-unstyled mt-1"><i class="fa-solid fa-circle-check"></i> URL
+                    Shortener with Advanced Features
+                </li>
+                <li class="list-unstyled mt-1"><i class="fa-solid fa-circle-check"></i>
+                    Retargeting Pixels
+                </li>
+            </ul>
+        </div>
+        <div class="col-6">
+            <a href="">
+                <img src="{{ url_for('static', filename='img/tly-link-management-1.png') }}" class="img-fluid shadow-lg" alt="">
+            </a>
+        </div>
+    </div>
+    <hr class="my-5">
+    <div class="row mb-5">
+        <div class="col-6">
+            <a href="">
+                <img src="{{ url_for('static', filename='img/link-management-custom-domain-1.png') }}"
+                     class="img-fluid shadow-lg" alt="">
+            </a>
+        </div>
+        <div class="col-6 my-auto">
+            <h2>Custom Domains</h2>
+            <p class="lead">Make your links powerful marketing assets. Custom domains replace t.ly
+                with your own domain name, making your links consistently recognizable across
+                channels. They're so powerful, businesses that use them get up to 34% more
+                clicks.</p>
+            <ul class="ps-0 mt-3">
+                <li class="list-unstyled"><i class="fa-solid fa-circle-check"></i> Use custom
+                    domains for your links
+                </li>
+                <li class="list-unstyled mt-1"><i class="fa-solid fa-circle-check"></i> Make
+                    your links recognizable and consistent across channels
+                </li>
+                <li class="list-unstyled mt-1"><i class="fa-solid fa-circle-check"></i> Increase
+                    clicks on your links by up to 34%
+                </li>
+                <li class="list-unstyled mt-1"><i class="fa-solid fa-circle-check"></i> Create a
+                    more consistent, branded experience with your links
+                </li>
+                <li class="list-unstyled mt-1"><i class="fa-solid fa-circle-check"></i> Build
+                    trust and credibility with your audience
+                </li>
+            </ul>
+            <div class="text-center mt-5"><a href="" type="button" class="btn btn-dark btn-lg">Start
+                Branding Short Links</a></div>
+        </div>
+    </div>
+    <hr class="my-5">
+    <div class="row mb-5">
+        <div class="col-6 my-auto">
+            <h2>Smart Links</h2>
+            <p class="lead">Smart URLs redirect users to different destinations based on their
+                device, location, or browser. After entering a default URL, users are able to
+                specify to which device or browser-specific URLs they want to direct their
+                traffic. This allows you to share one URL to target multiple destinations.</p>
+            <ul class="ps-0 mt-3">
+                <li class="list-unstyled"><i class="fa-solid fa-circle-check"></i> Redirects
+                    based on a User's device, location or browser
+                </li>
+                <li class="list-unstyled mt-1"><i class="fa-solid fa-circle-check"></i> Improve
+                    your conversion and click-through rates
+                </li>
+                <li class="list-unstyled mt-1"><i class="fa-solid fa-circle-check"></i> Easy to
+                    share
+                </li>
+            </ul>
+            <div class="text-center mt-5"><a href="" type="button"
+                                             class="btn btn-dark btn-lg">Create Smarter Links</a></div>
+        </div>
+        <div class="col-6">
+            <a href="">
+                <img src="{{ url_for('static', filename='img/link-management-smart-links-1.png') }}"
+                     class="img-fluid shadow-lg" alt="">
+            </a>
+        </div>
+    </div>
+    <div class="row mb-4">
+        <div class="col-12">
+            <div class="bg-secondary-subtle text-center py-3 rounded">
+                <p class="mb-0 fs-5">Looking for additional features?</p>
+                <p class="mb-0 fs-5"><a href=""
+                                        class="link-warning link-opacity-75-hover link-underline-opacity-75-hover link-underline-opacity-0">Sign
+                    Up Here</a></p>
+            </div>
+        </div>
+    </div>
+
+</div>
+<footer class="footer bg-dark py-4 mt-2">
+    <div class="container">
+        <div class="row">
+            <div class="col-4 text-light">
+                <h4>Features</h4>
+                <ul class="list-unstyled mb-0">
+                    <li class="pb-2"><a href=""
+                                        class="link-light link-underline-opacity-75-hover link-underline-opacity-0">Extension</a>
+                    </li>
+                    <li class="pb-2"><a href=""
+                                        class="link-light link-underline-opacity-75-hover link-underline-opacity-0">API
+                        Docs</a>
+                    </li>
+                    <li class="pb-2"><a href=""
+                                        class="link-light link-underline-opacity-75-hover link-underline-opacity-0">OR
+                        Code
+                        Generator</a></li>
+                    <li class="pb-2"><a href=""
+                                        class="link-light link-underline-opacity-75-hover link-underline-opacity-0">Tools</a>
+                    </li>
+                    <li class="pb-2"><a href=""
+                                        class="link-light link-underline-opacity-75-hover link-underline-opacity-0">Sign
+                        Up</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-4 text-light">
+                <h4>Resources</h4>
+                <ul class="list-unstyled mb-0">
+                    <li class="pb-2"><a href=""
+                                        class="link-light link-underline-opacity-75-hover link-underline-opacity-0">Report
+                        Link</a></li>
+                    <li class="pb-2"><a href=""
+                                        class="link-light link-underline-opacity-75-hover link-underline-opacity-0">FAQ</a>
+                    </li>
+                    <li class="pb-2"><a href=""
+                                        class="link-light link-underline-opacity-75-hover link-underline-opacity-0">Affiliates</a>
+                    </li>
+                    <li class="pb-2"><a href=""
+                                        class="link-light link-underline-opacity-75-hover link-underline-opacity-0">Privacy</a>
+                    </li>
+                    <li class="pb-2"><a href=""
+                                        class="link-light link-underline-opacity-75-hover link-underline-opacity-0">Terms</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-4 text-light">
+                <h4>Company</h4>
+                <ul class="list-unstyled mb-0">
+                    <li class="pb-2"><a href=""
+                                        class="link-light link-underline-opacity-75-hover link-underline-opacity-0">About</a>
+                    </li>
+                    <li class="pb-2"><a href=""
+                                        class="link-light link-underline-opacity-75-hover link-underline-opacity-0">Blog</a>
+                    </li>
+                    <li class="pb-2"><a href=""
+                                        class="link-light link-underline-opacity-75-hover link-underline-opacity-0">Contact</a>
+                    </li>
+                    <li class="pb-2"><a href=""
+                                        class="link-light link-underline-opacity-75-hover link-underline-opacity-0">Twitter</a>
+                    </li>
+                    <li class="pb-2"><a href=""
+                                        class="link-light link-underline-opacity-75-hover link-underline-opacity-0">Facebook</a>
+                    </li>
+                    <li class="pb-2"><a href=""
+                                        class="link-light link-underline-opacity-75-hover link-underline-opacity-0">LinkedIn</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
+<script src="{{ url_for('static', filename='js/bootstrap.bundle.min.js') }}"></script>
+<script src="https://kit.fontawesome.com/f3d396c665.js" crossorigin="anonymous"></script>
+</body>
+</html>
