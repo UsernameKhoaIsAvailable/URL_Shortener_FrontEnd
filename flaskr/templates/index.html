@@ -13,7 +13,7 @@
 <body>
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="container-sm">
-        <a class="navbar-brand" href="">
+        <a class="navbar-brand" href="/">
             <img src="{{ url_for('static', filename='img/tly-high-resolution-logo.png') }}" height="35" alt="">
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
@@ -29,16 +29,20 @@
                         Products
                     </a>
                     <ul class="dropdown-menu py-2" aria-labelledby="navbarDropdown">
-                        <li><a class="dropdown-item py-3" href="#"><i class="fa-solid fa-link"></i> Link Management</a>
+                        <li><a class="dropdown-item py-3" href="/products/link-management"><i
+                                class="fa-solid fa-link"></i> Link Management</a>
                         </li>
-                        <li><a class="dropdown-item py-3" href="#"><i class="fa-solid fa-square-arrow-up-right"></i>
+                        <li><a class="dropdown-item py-3" href="/products/one-links"><i
+                                class="fa-solid fa-square-arrow-up-right"></i>
                             OneLinks</a>
                         </li>
                         <li><a class="dropdown-item py-3" href="#"><i class="fa-solid fa-qrcode"></i> QR Code Generator</a>
                         </li>
-                        <li><a class="dropdown-item py-3" href="#"><i class="fa-brands fa-chrome"></i> Link Shortener
+                        <li><a class="dropdown-item py-3" href="https://t.ly/extension"><i
+                                class="fa-brands fa-chrome"></i> Link Shortener
                             Extension</a></li>
-                        <li><a class="dropdown-item py-3" href="#"><i class="fa-solid fa-image"></i> Screenshot Website</a>
+                        <li><a class="dropdown-item py-3" href="/tools/screenshot-website"><i
+                                class="fa-solid fa-image"></i> Screenshot Website</a>
                         </li>
                     </ul>
                 </li>
@@ -49,13 +53,14 @@
                         Resources
                     </a>
                     <ul class="dropdown-menu py-2" aria-labelledby="navbarDropdown">
-                        <li><a class="dropdown-item py-3" href="#"><i class="fa-solid fa-rss"></i> Blog</a></li>
+                        <li><a class="dropdown-item py-3" href="/blog"><i class="fa-solid fa-rss"></i> Blog</a></li>
                         <li><a class="dropdown-item py-3" href="#"><i class="fa-solid fa-chevron-right"></i><b>_</b> API
                             Documentation</a></li>
-                        <li><a class="dropdown-item py-3" href="#"><i class="fa-solid fa-circle-question"></i>
+                        <li><a class="dropdown-item py-3" href="/faq"><i class="fa-solid fa-circle-question"></i>
                             Frequently Asked
                             Questions</a></li>
-                        <li><a class="dropdown-item py-3" href="#"><i class="fa-solid fa-handshake"></i> Affiliate
+                        <li><a class="dropdown-item py-3" href="/affiliates"><i class="fa-solid fa-handshake"></i>
+                            Affiliate
                             Program</a>
                         </li>
                     </ul>
@@ -82,9 +87,9 @@
                     </ul>
                 </li>
             </ul>
-            <a href=""
+            <a href="/login"
                class="link-light link-opacity-50-hover link-underline-opacity-50-hover link-underline-opacity-0">Login</a>
-            <button type="button" class="btn btn-warning ms-3">Sign Up</button>
+            <a href="/register" role="button" class="btn btn-warning ms-3">Sign Up</a>
         </div>
     </div>
 </nav>
@@ -94,7 +99,7 @@
             <h1><b>Create Short URLs</b></h1>
             <p class="lead">T.LY is the World's Shortest Link Shortener service to track, brand, and share short
                 URLs.</p>
-            <a href="" type="button" class="btn btn-warning btn-lg">Get Started</a>
+            <a href="/register" type="button" class="btn btn-warning btn-lg">Get Started</a>
         </div>
     </div>
     <div class="row">
@@ -110,7 +115,7 @@
         <div class="col-4 text-center">
             <i class="fa-solid fa-down-left-and-up-right-to-center fa-5x"></i>
             <h2><b>Shorten URLs</b></h2>
-            <p>T.LY URL Shortener makes long links look cleaner and easier to share! Add your own <a href=""
+            <p>T.LY URL Shortener makes long links look cleaner and easier to share! Add your own <a href="/register"
                                                                                                      class="link-warning link-opacity-75-hover link-underline-opacity-75-hover link-underline-opacity-0">Custom
                 Domains</a> to personalize your brand! Over 20 million monthly visitors trust T.LY. Easily create
                 trackable
@@ -121,14 +126,14 @@
             <h2><b>Track Link Clicks</b></h2>
             <p>With over 40 million links shortened and tracked over 1 billion clicks, T.LY lets you know where users
                 are
-                coming from and is a click counter tool to <a href=""
+                coming from and is a click counter tool to <a href="/register"
                                                               class="link-warning link-opacity-75-hover link-underline-opacity-75-hover link-underline-opacity-0">track
                     link analytics</a>. Just add a + at the end of any short URL to see statistics.</p>
         </div>
         <div class="col-4 text-center">
             <i class="fa-brands fa-chrome fa-5x"></i>
             <h2><b>Browser Extension</b></h2>
-            <p>Install our free <a href=""
+            <p>Install our free <a href="https://t.ly/extension"
                                    class="link-warning link-opacity-75-hover link-underline-opacity-75-hover link-underline-opacity-0">Browser
                 Extension</a> with over 450,000 users from the extension store to automatically shorten links in one
                 easy
@@ -138,7 +143,7 @@
     <div class="row">
         <div class="col-12">
             <div class="bg-secondary-subtle text-center py-3 rounded">
-                <p class="mb-0">Looking for API access? <a href=""
+                <p class="mb-0">Looking for API access? <a href="/register"
                                                            class="link-warning link-opacity-75-hover link-underline-opacity-75-hover link-underline-opacity-0">Sign
                     Up
                     Here</a></p>
@@ -192,7 +197,7 @@
                         <li class="d-flex align-items-center mb-2">&nbsp;</li>
                         <li class="d-flex align-items-center mb-2">&nbsp;</li>
                     </ul>
-                    <a href="" type="button" class="btn btn-warning">Sign Up</a>
+                    <a href="/register" type="button" class="btn btn-warning">Sign Up</a>
                 </div>
             </div>
         </div>
@@ -237,7 +242,7 @@
                         <li class="d-flex align-items-center mb-2">&nbsp;</li>
                         <li class="d-flex align-items-center mb-2">&nbsp;</li>
                     </ul>
-                    <a href="" type="button" class="btn btn-warning">Sign Up</a>
+                    <a href="/register" type="button" class="btn btn-warning">Sign Up</a>
                 </div>
             </div>
         </div>
@@ -284,7 +289,7 @@
                             Retargeting
                         </li>
                     </ul>
-                    <a href="" type="button" class="btn btn-warning">Sign Up</a>
+                    <a href="/register" type="button" class="btn btn-warning">Sign Up</a>
                 </div>
             </div>
         </div>
@@ -292,7 +297,7 @@
     <div class="row">
         <div class="col-12">
             <div class="bg-secondary-subtle text-center py-3 rounded">
-                <p class="m-0">Need a larger plan with teams? <a href=""
+                <p class="m-0">Need a larger plan with teams? <a href="mailto:support@t.ly?Subject=T.LY Plans"
                                                                  class="link-warning link-opacity-75-hover link-underline-opacity-75-hover link-underline-opacity-0">Contact
                     us
                 </a>and we will tailor a solution to meet your needs!</p>
@@ -305,7 +310,7 @@
         <div class="row">
             <div class="col-8 mx-auto text-center">
                 <h3 class="mb-3">Looking to ADD your own custom domain?</h3>
-                <a href="" type="button" class="btn btn-warning">Get Started</a>
+                <a href="/register" type="button" class="btn btn-warning">Get Started</a>
             </div>
         </div>
     </div>
@@ -318,7 +323,7 @@
         </div>
         <div class="col-4 d-flex justify-content-end">
             <div class="card w-75 border-bottom-0 border-start-0 border-end-0 card-hover">
-                <a href="" class="stretched-link link-dark link-underline-opacity-75-hover link-underline-opacity-0">
+                <a href="#" class="stretched-link link-dark link-underline-opacity-75-hover link-underline-opacity-0">
                     <img src="{{ url_for('static', filename='img/Best-URL-Shortener.jpg') }}"
                          class="card-img-top img-size" alt="">
                     <div class="card-body border-top-0 border-start border-end border-bottom shadow-sm bg-body-secondary">
@@ -337,7 +342,7 @@
         </div>
         <div class="col-4 d-flex justify-content-center">
             <div class="card w-75 border-bottom-0 border-start-0 border-end-0 card-hover">
-                <a href="" class="stretched-link link-dark link-underline-opacity-75-hover link-underline-opacity-0">
+                <a href="#" class="stretched-link link-dark link-underline-opacity-75-hover link-underline-opacity-0">
                     <img src="{{ url_for('static', filename='img/How-to-Create-a-Tiny-URL.jpg') }}"
                          class="card-img-top img-size" alt="">
                     <div class="card-body border-top-0 border-start border-end border-bottom shadow-sm bg-body-secondary">
@@ -356,7 +361,7 @@
         </div>
         <div class="col-4 d-flex justify-content-start">
             <div class="card w-75 border-bottom-0 border-start-0 border-end-0 card-hover">
-                <a href="" class="stretched-link link-dark link-underline-opacity-75-hover link-underline-opacity-0">
+                <a href="#" class="stretched-link link-dark link-underline-opacity-75-hover link-underline-opacity-0">
                     <img src="{{ url_for('static', filename='img/What-is-a-Url-Shortener-1.jpg') }}"
                          class="card-img-top img-size" alt="">
                     <div class="card-body border-top-0 border-start border-end border-bottom shadow-sm bg-body-secondary">
@@ -375,7 +380,7 @@
         </div>
         <div class="col-4 d-flex justify-content-end">
             <div class="card w-75 mt-4 border-bottom-0 border-start-0 border-end-0 card-hover">
-                <a href="" class="stretched-link link-dark link-underline-opacity-75-hover link-underline-opacity-0">
+                <a href="#" class="stretched-link link-dark link-underline-opacity-75-hover link-underline-opacity-0">
                     <img src="{{ url_for('static', filename='img/The-Hidden-Benefits-Of-Using-a-Link-Shortener.jpg') }}"
                          class="card-img-top img-size"
                          alt="">
@@ -395,7 +400,7 @@
         </div>
         <div class="col-4 d-flex justify-content-center">
             <div class="card w-75 mt-4 border-bottom-0 border-start-0 border-end-0 card-hover">
-                <a href="" class="stretched-link link-dark link-underline-opacity-75-hover link-underline-opacity-0">
+                <a href="#" class="stretched-link link-dark link-underline-opacity-75-hover link-underline-opacity-0">
                     <img src="{{ url_for('static', filename='img/URL-Shortener-API.jpg') }}"
                          class="card-img-top img-size" height="40%" alt="">
                     <div class="card-body border-top-0 border-start border-end border-bottom shadow-sm bg-body-secondary">
@@ -414,7 +419,7 @@
         </div>
         <div class="col-4 d-flex justify-content-start">
             <div class="card w-75 mt-4 border-bottom-0 border-start-0 border-end-0 card-hover">
-                <a href="" class="stretched-link link-dark link-underline-opacity-75-hover link-underline-opacity-0">
+                <a href="#" class="stretched-link link-dark link-underline-opacity-75-hover link-underline-opacity-0">
                     <img src="{{ url_for('static', filename='img/How-do-I-shorten-a-URL-for-free.jpg') }}"
                          class="card-img-top img-hover img-size"
                          alt=""
@@ -440,7 +445,7 @@
         <div class="row">
             <div class="col-8 mx-auto text-center">
                 <h3 class="mb-3">Looking for MORE than a Free URL Shortener?</h3>
-                <a href="" class="btn btn-warning">Get Started</a>
+                <a href="/register" class="btn btn-warning">Get Started</a>
             </div>
         </div>
     </div>
@@ -451,19 +456,19 @@
             <div class="col-4 text-light">
                 <h4>Features</h4>
                 <ul class="list-unstyled mb-0">
-                    <li class="pb-2"><a href=""
+                    <li class="pb-2"><a href="https://t.ly/extension"
                                         class="link-light link-underline-opacity-75-hover link-underline-opacity-0">Extension</a>
                     </li>
-                    <li class="pb-2"><a href=""
+                    <li class="pb-2"><a href="#"
                                         class="link-light link-underline-opacity-75-hover link-underline-opacity-0">API
                         Docs</a></li>
-                    <li class="pb-2"><a href=""
+                    <li class="pb-2"><a href="#"
                                         class="link-light link-underline-opacity-75-hover link-underline-opacity-0">OR
                         Code Generator</a></li>
-                    <li class="pb-2"><a href=""
+                    <li class="pb-2"><a href="/tools"
                                         class="link-light link-underline-opacity-75-hover link-underline-opacity-0">Tools</a>
                     </li>
-                    <li class="pb-2"><a href=""
+                    <li class="pb-2"><a href="/register"
                                         class="link-light link-underline-opacity-75-hover link-underline-opacity-0">Sign
                         Up</a></li>
                 </ul>
@@ -471,19 +476,19 @@
             <div class="col-4 text-light">
                 <h4>Resources</h4>
                 <ul class="list-unstyled mb-0">
-                    <li class="pb-2"><a href=""
+                    <li class="pb-2"><a href="mailto:support@t.ly?Subject=Report%20Link"
                                         class="link-light link-underline-opacity-75-hover link-underline-opacity-0">Report
                         Link</a></li>
-                    <li class="pb-2"><a href=""
+                    <li class="pb-2"><a href="/faq"
                                         class="link-light link-underline-opacity-75-hover link-underline-opacity-0">FAQ</a>
                     </li>
-                    <li class="pb-2"><a href=""
+                    <li class="pb-2"><a href="/affiliates"
                                         class="link-light link-underline-opacity-75-hover link-underline-opacity-0">Affiliates</a>
                     </li>
-                    <li class="pb-2"><a href=""
+                    <li class="pb-2"><a href="/privacy"
                                         class="link-light link-underline-opacity-75-hover link-underline-opacity-0">Privacy</a>
                     </li>
-                    <li class="pb-2"><a href=""
+                    <li class="pb-2"><a href="/terms"
                                         class="link-light link-underline-opacity-75-hover link-underline-opacity-0">Terms</a>
                     </li>
                 </ul>
@@ -491,22 +496,22 @@
             <div class="col-4 text-light">
                 <h4>Company</h4>
                 <ul class="list-unstyled mb-0">
-                    <li class="pb-2"><a href=""
+                    <li class="pb-2"><a href="/about"
                                         class="link-light link-underline-opacity-75-hover link-underline-opacity-0">About</a>
                     </li>
-                    <li class="pb-2"><a href=""
+                    <li class="pb-2"><a href="/blog"
                                         class="link-light link-underline-opacity-75-hover link-underline-opacity-0">Blog</a>
                     </li>
-                    <li class="pb-2"><a href=""
+                    <li class="pb-2"><a href="/contact"
                                         class="link-light link-underline-opacity-75-hover link-underline-opacity-0">Contact</a>
                     </li>
-                    <li class="pb-2"><a href=""
+                    <li class="pb-2"><a href="https://t.ly/twitter"
                                         class="link-light link-underline-opacity-75-hover link-underline-opacity-0">Twitter</a>
                     </li>
-                    <li class="pb-2"><a href=""
+                    <li class="pb-2"><a href="https://t.ly/facebook"
                                         class="link-light link-underline-opacity-75-hover link-underline-opacity-0">Facebook</a>
                     </li>
-                    <li class="pb-2"><a href=""
+                    <li class="pb-2"><a href="https://t.ly/linkedin"
                                         class="link-light link-underline-opacity-75-hover link-underline-opacity-0">LinkedIn</a>
                     </li>
                 </ul>
@@ -517,5 +522,4 @@
 <script src="{{ url_for('static', filename='js/bootstrap.bundle.min.js') }}"></script>
 <script src="https://kit.fontawesome.com/f3d396c665.js" crossorigin="anonymous"></script>
 </body>
-
 </html>

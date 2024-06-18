@@ -12,7 +12,7 @@
 <body>
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="container-sm">
-        <a class="navbar-brand" href="">
+        <a class="navbar-brand" href="/">
             <img src="{{ url_for('static', filename='img/tly-high-resolution-logo.png') }}" height="35" alt="">
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
@@ -28,16 +28,20 @@
                         Products
                     </a>
                     <ul class="dropdown-menu py-2" aria-labelledby="navbarDropdown">
-                        <li><a class="dropdown-item py-3" href="#"><i class="fa-solid fa-link"></i> Link Management</a>
+                        <li><a class="dropdown-item py-3" href="/products/link-management"><i
+                                class="fa-solid fa-link"></i> Link Management</a>
                         </li>
-                        <li><a class="dropdown-item py-3" href="#"><i class="fa-solid fa-square-arrow-up-right"></i>
+                        <li><a class="dropdown-item py-3" href="/products/one-links"><i
+                                class="fa-solid fa-square-arrow-up-right"></i>
                             OneLinks</a>
                         </li>
                         <li><a class="dropdown-item py-3" href="#"><i class="fa-solid fa-qrcode"></i> QR Code Generator</a>
                         </li>
-                        <li><a class="dropdown-item py-3" href="#"><i class="fa-brands fa-chrome"></i> Link Shortener
+                        <li><a class="dropdown-item py-3" href="https://t.ly/extension"><i
+                                class="fa-brands fa-chrome"></i> Link Shortener
                             Extension</a></li>
-                        <li><a class="dropdown-item py-3" href="#"><i class="fa-solid fa-image"></i> Screenshot Website</a>
+                        <li><a class="dropdown-item py-3" href="/tools/screenshot-website"><i
+                                class="fa-solid fa-image"></i> Screenshot Website</a>
                         </li>
                     </ul>
                 </li>
@@ -48,13 +52,14 @@
                         Resources
                     </a>
                     <ul class="dropdown-menu py-2" aria-labelledby="navbarDropdown">
-                        <li><a class="dropdown-item py-3" href="#"><i class="fa-solid fa-rss"></i> Blog</a></li>
+                        <li><a class="dropdown-item py-3" href="/blog"><i class="fa-solid fa-rss"></i> Blog</a></li>
                         <li><a class="dropdown-item py-3" href="#"><i class="fa-solid fa-chevron-right"></i><b>_</b> API
                             Documentation</a></li>
-                        <li><a class="dropdown-item py-3" href="#"><i class="fa-solid fa-circle-question"></i>
+                        <li><a class="dropdown-item py-3" href="/faq"><i class="fa-solid fa-circle-question"></i>
                             Frequently Asked
                             Questions</a></li>
-                        <li><a class="dropdown-item py-3" href="#"><i class="fa-solid fa-handshake"></i> Affiliate
+                        <li><a class="dropdown-item py-3" href="/affiliates"><i class="fa-solid fa-handshake"></i>
+                            Affiliate
                             Program</a>
                         </li>
                     </ul>
@@ -81,9 +86,9 @@
                     </ul>
                 </li>
             </ul>
-            <a href=""
+            <a href="/login"
                class="link-light link-opacity-50-hover link-underline-opacity-50-hover link-underline-opacity-0">Login</a>
-            <button type="button" class="btn btn-warning ms-3">Sign Up</button>
+            <a href="/register" type="button" class="btn btn-warning ms-3">Sign Up</a>
         </div>
     </div>
 </nav>
@@ -92,9 +97,9 @@
         <div class="col-6 offset-3">
             <h2 class="text-center">Privacy Policy</h2>
             <p>Your privacy is important to us. It is TLY's policy to respect your privacy regarding any information we
-                may collect from you across our website, <a href=""
-                                                            class="link-warning link-opacity-75-hover link-underline-opacity-75-hover link-underline-opacity-0">(my
-                    link)</a>, and other sites we own and operate.</p>
+                may collect from you across our website, <a href="/"
+                                                            class="link-warning link-opacity-75-hover link-underline-opacity-75-hover link-underline-opacity-0">https://tly-8zld.onrender.com</a>,
+                and other sites we own and operate.</p>
             <p>We only ask for personal information when we truly need it to provide a service to you. We collect it by
                 fair and lawful means, with your knowledge and consent. We also let you know why we're collecting it and
                 how it will be used.</p>
@@ -111,9 +116,9 @@
             <p>Your continued use of our website will be regarded as acceptance of our practices around privacy and
                 personal information. If you have any questions about how we handle user data and personal information,
                 feel free to contact us.</p>
-            <p>This site is protected by reCAPTCHA and the Google <a href=""
+            <p>This site is protected by reCAPTCHA and the Google <a href="https://policies.google.com/privacy"
                                                                      class="link-warning link-opacity-75-hover link-underline-opacity-75-hover link-underline-opacity-0">Privacy
-                Policy</a> and <a href=""
+                Policy</a> and <a href="https://policies.google.com/terms"
                                   class="link-warning link-opacity-75-hover link-underline-opacity-75-hover link-underline-opacity-0">Terms
                 of Service</a> apply</p>
             <p>This policy is effective as of 1 January 2020.</p>
@@ -126,19 +131,19 @@
             <div class="col-4 text-light">
                 <h4>Features</h4>
                 <ul class="list-unstyled mb-0">
-                    <li class="pb-2"><a href=""
+                    <li class="pb-2"><a href="https://t.ly/extension"
                                         class="link-light link-underline-opacity-75-hover link-underline-opacity-0">Extension</a>
                     </li>
-                    <li class="pb-2"><a href=""
+                    <li class="pb-2"><a href="#"
                                         class="link-light link-underline-opacity-75-hover link-underline-opacity-0">API
                         Docs</a></li>
-                    <li class="pb-2"><a href=""
+                    <li class="pb-2"><a href="#"
                                         class="link-light link-underline-opacity-75-hover link-underline-opacity-0">OR
                         Code Generator</a></li>
-                    <li class="pb-2"><a href=""
+                    <li class="pb-2"><a href="/tools"
                                         class="link-light link-underline-opacity-75-hover link-underline-opacity-0">Tools</a>
                     </li>
-                    <li class="pb-2"><a href=""
+                    <li class="pb-2"><a href="/register"
                                         class="link-light link-underline-opacity-75-hover link-underline-opacity-0">Sign
                         Up</a></li>
                 </ul>
@@ -146,19 +151,19 @@
             <div class="col-4 text-light">
                 <h4>Resources</h4>
                 <ul class="list-unstyled mb-0">
-                    <li class="pb-2"><a href=""
+                    <li class="pb-2"><a href="mailto:support@t.ly?Subject=Report%20Link"
                                         class="link-light link-underline-opacity-75-hover link-underline-opacity-0">Report
                         Link</a></li>
-                    <li class="pb-2"><a href=""
+                    <li class="pb-2"><a href="/faq"
                                         class="link-light link-underline-opacity-75-hover link-underline-opacity-0">FAQ</a>
                     </li>
-                    <li class="pb-2"><a href=""
+                    <li class="pb-2"><a href="/affiliates"
                                         class="link-light link-underline-opacity-75-hover link-underline-opacity-0">Affiliates</a>
                     </li>
-                    <li class="pb-2"><a href=""
+                    <li class="pb-2"><a href="/privacy"
                                         class="link-light link-underline-opacity-75-hover link-underline-opacity-0">Privacy</a>
                     </li>
-                    <li class="pb-2"><a href=""
+                    <li class="pb-2"><a href="/terms"
                                         class="link-light link-underline-opacity-75-hover link-underline-opacity-0">Terms</a>
                     </li>
                 </ul>
@@ -166,22 +171,22 @@
             <div class="col-4 text-light">
                 <h4>Company</h4>
                 <ul class="list-unstyled mb-0">
-                    <li class="pb-2"><a href=""
+                    <li class="pb-2"><a href="/about"
                                         class="link-light link-underline-opacity-75-hover link-underline-opacity-0">About</a>
                     </li>
-                    <li class="pb-2"><a href=""
+                    <li class="pb-2"><a href="/blog"
                                         class="link-light link-underline-opacity-75-hover link-underline-opacity-0">Blog</a>
                     </li>
-                    <li class="pb-2"><a href=""
+                    <li class="pb-2"><a href="/contact"
                                         class="link-light link-underline-opacity-75-hover link-underline-opacity-0">Contact</a>
                     </li>
-                    <li class="pb-2"><a href=""
+                    <li class="pb-2"><a href="https://t.ly/twitter"
                                         class="link-light link-underline-opacity-75-hover link-underline-opacity-0">Twitter</a>
                     </li>
-                    <li class="pb-2"><a href=""
+                    <li class="pb-2"><a href="https://t.ly/facebook"
                                         class="link-light link-underline-opacity-75-hover link-underline-opacity-0">Facebook</a>
                     </li>
-                    <li class="pb-2"><a href=""
+                    <li class="pb-2"><a href="https://t.ly/linkedin"
                                         class="link-light link-underline-opacity-75-hover link-underline-opacity-0">LinkedIn</a>
                     </li>
                 </ul>

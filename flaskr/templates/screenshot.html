@@ -13,7 +13,7 @@
 <body>
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="container-sm">
-        <a class="navbar-brand" href="">
+        <a class="navbar-brand" href="/">
             <img src="{{ url_for('static', filename='img/tly-high-resolution-logo.png') }}" height="35" alt="">
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -29,17 +29,17 @@
                         Products
                     </a>
                     <ul class="dropdown-menu py-2" aria-labelledby="navbarDropdown">
-                        <li><a class="dropdown-item py-3" href="#"><i class="fa-solid fa-link"></i> Link
+                        <li><a class="dropdown-item py-3" href="/products/link-management"><i class="fa-solid fa-link"></i> Link
                             Management</a></li>
-                        <li><a class="dropdown-item py-3" href="#"><i class="fa-solid fa-square-arrow-up-right"></i>
+                        <li><a class="dropdown-item py-3" href="/products/one-links"><i class="fa-solid fa-square-arrow-up-right"></i>
                             OneLinks</a>
                         </li>
                         <li><a class="dropdown-item py-3" href="#"><i class="fa-solid fa-qrcode"></i> QR Code
                             Generator</a></li>
-                        <li><a class="dropdown-item py-3" href="#"><i class="fa-brands fa-chrome"></i> Link
+                        <li><a class="dropdown-item py-3" href="https://t.ly/extension"><i class="fa-brands fa-chrome"></i> Link
                             Shortener
                             Extension</a></li>
-                        <li><a class="dropdown-item py-3" href="#"><i class="fa-solid fa-image"></i>
+                        <li><a class="dropdown-item py-3" href="/tools/screenshot-website"><i class="fa-solid fa-image"></i>
                             Screenshot
                             Website</a></li>
                     </ul>
@@ -50,15 +50,15 @@
                         Resources
                     </a>
                     <ul class="dropdown-menu py-2" aria-labelledby="navbarDropdown">
-                        <li><a class="dropdown-item py-3" href="#"><i class="fa-solid fa-rss"></i> Blog</a>
+                        <li><a class="dropdown-item py-3" href="/blog"><i class="fa-solid fa-rss"></i> Blog</a>
                         </li>
                         <li><a class="dropdown-item py-3" href="#"><i class="fa-solid fa-chevron-right"></i><b>_</b>
                             API
                             Documentation</a></li>
-                        <li><a class="dropdown-item py-3" href="#"><i class="fa-solid fa-circle-question"></i>
+                        <li><a class="dropdown-item py-3" href="/faq"><i class="fa-solid fa-circle-question"></i>
                             Frequently Asked
                             Questions</a></li>
-                        <li><a class="dropdown-item py-3" href="#"><i class="fa-solid fa-handshake"></i>
+                        <li><a class="dropdown-item py-3" href="/affiliates"><i class="fa-solid fa-handshake"></i>
                             Affiliate
                             Program</a>
                         </li>
@@ -88,9 +88,9 @@
                     </ul>
                 </li>
             </ul>
-            <a href=""
+            <a href="/login"
                class="link-light link-opacity-50-hover link-underline-opacity-50-hover link-underline-opacity-0">Login</a>
-            <button type="button" class="btn btn-warning ms-3">Sign Up</button>
+            <a href="/register" type="button" class="btn btn-warning ms-3">Sign Up</a>
         </div>
     </div>
 </nav>
@@ -110,7 +110,7 @@
                 </form>
             </div>
             <div class="bg-secondary-subtle text-center py-3 mt-5 rounded">
-                <p class="mb-0">Looking to create short URLs? <a href=""
+                <p class="mb-0">Looking to create short URLs? <a href="/register"
                                                                  class="link-warning link-opacity-75-hover link-underline-opacity-75-hover link-underline-opacity-0">Get
                     Started</a></p>
             </div>
@@ -139,7 +139,7 @@
         </div>
         <div class="col-4 d-flex justify-content-end">
             <div class="card w-75 border-bottom-0 border-start-0 border-end-0 card-hover">
-                <a href=""
+                <a href="#"
                    class="stretched-link link-dark link-underline-opacity-75-hover link-underline-opacity-0">
                     <img src="{{ url_for('static', filename='img/Best-URL-Shortener.jpg') }}" class="card-img-top img-size" alt="">
                     <div class="card-body border-top-0 border-start border-end bg-body-secondary">
@@ -162,7 +162,7 @@
         </div>
         <div class="col-4 d-flex justify-content-center">
             <div class="card w-75 border-bottom-0 border-start-0 border-end-0 card-hover">
-                <a href=""
+                <a href="#"
                    class="stretched-link link-dark link-underline-opacity-75-hover link-underline-opacity-0">
                     <img src="{{ url_for('static', filename='img/How-to-Create-a-Tiny-URL.jpg') }}" class="card-img-top img-size" alt="">
                     <div class="card-body border-top-0 border-start border-end bg-body-secondary">
@@ -185,7 +185,7 @@
         </div>
         <div class="col-4 d-flex justify-content-start">
             <div class="card w-75 border-bottom-0 border-start-0 border-end-0 card-hover">
-                <a href=""
+                <a href="#"
                    class="stretched-link link-dark link-underline-opacity-75-hover link-underline-opacity-0">
                     <img src="{{ url_for('static', filename='img/What-is-a-Url-Shortener-1.jpg') }}" class="card-img-top img-size" alt="">
                     <div class="card-body border-top-0 border-start border-end bg-body-secondary">
@@ -208,7 +208,7 @@
         </div>
         <div class="col-4 d-flex justify-content-end">
             <div class="card w-75 mt-4 border-bottom-0 border-start-0 border-end-0 card-hover">
-                <a href=""
+                <a href="#"
                    class="stretched-link link-dark link-underline-opacity-75-hover link-underline-opacity-0">
                     <img src="{{ url_for('static', filename='img/The-Hidden-Benefits-Of-Using-a-Link-Shortener.jpg') }}"
                          class="card-img-top img-size" alt="">
@@ -232,7 +232,7 @@
         </div>
         <div class="col-4 d-flex justify-content-center">
             <div class="card w-75 mt-4 border-bottom-0 border-start-0 border-end-0 card-hover">
-                <a href=""
+                <a href="#"
                    class="stretched-link link-dark link-underline-opacity-75-hover link-underline-opacity-0">
                     <img src="{{ url_for('static', filename='img/URL-Shortener-API.jpg') }}" class="card-img-top img-size" height="40%" alt="">
                     <div class="card-body border-top-0 border-start border-end bg-body-secondary">
@@ -255,7 +255,7 @@
         </div>
         <div class="col-4 d-flex justify-content-start">
             <div class="card w-75 mt-4 border-bottom-0 border-start-0 border-end-0 card-hover">
-                <a href=""
+                <a href="#"
                    class="stretched-link link-dark link-underline-opacity-75-hover link-underline-opacity-0">
                     <img src="{{ url_for('static', filename='img/How-do-I-shorten-a-URL-for-free.jpg') }}"
                          class="card-img-top img-hover img-size" alt="" height="40%">
@@ -279,7 +279,7 @@
         </div>
         <div class="col-4 d-flex justify-content-end">
             <div class="card w-75 mt-4 border-bottom-0 border-start-0 border-end-0 card-hover">
-                <a href=""
+                <a href="#"
                    class="stretched-link link-dark link-underline-opacity-75-hover link-underline-opacity-0">
                     <img src="{{ url_for('static', filename='img/The-Game-Changer-for-Sharing-Links-in-Your-Podcast.webp') }}"
                          class="card-img-top img-size" alt="">
@@ -299,7 +299,7 @@
         </div>
         <div class="col-4 d-flex justify-content-center">
             <div class="card mt-4 w-75 border-bottom-0 border-start-0 border-end-0 card-hover">
-                <a href=""
+                <a href="#"
                    class="stretched-link link-dark link-underline-opacity-75-hover link-underline-opacity-0">
                     <img src="{{ url_for('static', filename='img/SMS-Marketing-The-Essential-Role-of-Custom-Domains-1.webp') }}"
                          class="card-img-top img-size" alt="">
@@ -318,7 +318,7 @@
         </div>
         <div class="col-4 d-flex justify-content-start">
             <div class="card mt-4 w-75 border-bottom-0 border-start-0 border-end-0 card-hover">
-                <a href=""
+                <a href="#"
                    class="stretched-link link-dark link-underline-opacity-75-hover link-underline-opacity-0">
                     <img src="{{ url_for('static', filename='img/Harnessing-the-Power-of-TLY-for-Church-Management.webp') }}"
                          class="card-img-top img-size" alt="">
@@ -337,7 +337,7 @@
         </div>
         <div class="col-4 d-flex justify-content-end">
             <div class="card w-75 mt-4 border-bottom-0 border-start-0 border-end-0 card-hover">
-                <a href=""
+                <a href="#"
                    class="stretched-link link-dark link-underline-opacity-75-hover link-underline-opacity-0">
                     <img src="{{ url_for('static', filename='img/Enhancing-Books-with-Links-and-QR-Codes.webp') }}" class="card-img-top img-size"
                          alt="">
@@ -356,7 +356,7 @@
         </div>
         <div class="col-4 d-flex justify-content-center">
             <div class="card w-75 mt-4 border-bottom-0 border-start-0 border-end-0 card-hover">
-                <a href=""
+                <a href="#"
                    class="stretched-link link-dark link-underline-opacity-75-hover link-underline-opacity-0">
                     <img src="{{ url_for('static', filename='img/Bridging-the-Gap-Leveraging-Short-Links-in-Traditional-Marketing-Avenues.webp') }}"
                          class="card-img-top img-size" height="40%" alt="">
@@ -375,7 +375,7 @@
         </div>
         <div class="col-4 d-flex justify-content-start">
             <div class="card w-75 mt-4 border-bottom-0 border-start-0 border-end-0 card-hover">
-                <a href=""
+                <a href="#"
                    class="stretched-link link-dark link-underline-opacity-75-hover link-underline-opacity-0">
                     <img src="{{ url_for('static', filename='img/A-Deep-Dive-into-QR-Code-Tracking.webp') }}"
                          class="card-img-top img-hover img-size" alt="" height="40%">
@@ -400,21 +400,21 @@
             <div class="col-4 text-light">
                 <h4>Features</h4>
                 <ul class="list-unstyled mb-0">
-                    <li class="pb-2"><a href=""
+                    <li class="pb-2"><a href="https://t.ly/extension"
                                         class="link-light link-underline-opacity-75-hover link-underline-opacity-0">Extension</a>
                     </li>
-                    <li class="pb-2"><a href=""
+                    <li class="pb-2"><a href="#"
                                         class="link-light link-underline-opacity-75-hover link-underline-opacity-0">API
                         Docs</a>
                     </li>
-                    <li class="pb-2"><a href=""
+                    <li class="pb-2"><a href="#"
                                         class="link-light link-underline-opacity-75-hover link-underline-opacity-0">OR
                         Code
                         Generator</a></li>
-                    <li class="pb-2"><a href=""
+                    <li class="pb-2"><a href="/tools"
                                         class="link-light link-underline-opacity-75-hover link-underline-opacity-0">Tools</a>
                     </li>
-                    <li class="pb-2"><a href=""
+                    <li class="pb-2"><a href="/register"
                                         class="link-light link-underline-opacity-75-hover link-underline-opacity-0">Sign
                         Up</a>
                     </li>
@@ -423,19 +423,19 @@
             <div class="col-4 text-light">
                 <h4>Resources</h4>
                 <ul class="list-unstyled mb-0">
-                    <li class="pb-2"><a href=""
+                    <li class="pb-2"><a href="mailto:support@t.ly?Subject=Report%20Link"
                                         class="link-light link-underline-opacity-75-hover link-underline-opacity-0">Report
                         Link</a></li>
-                    <li class="pb-2"><a href=""
+                    <li class="pb-2"><a href="/faq"
                                         class="link-light link-underline-opacity-75-hover link-underline-opacity-0">FAQ</a>
                     </li>
-                    <li class="pb-2"><a href=""
+                    <li class="pb-2"><a href="/affiliates"
                                         class="link-light link-underline-opacity-75-hover link-underline-opacity-0">Affiliates</a>
                     </li>
-                    <li class="pb-2"><a href=""
+                    <li class="pb-2"><a href="/privacy"
                                         class="link-light link-underline-opacity-75-hover link-underline-opacity-0">Privacy</a>
                     </li>
-                    <li class="pb-2"><a href=""
+                    <li class="pb-2"><a href="/terms"
                                         class="link-light link-underline-opacity-75-hover link-underline-opacity-0">Terms</a>
                     </li>
                 </ul>
@@ -443,22 +443,22 @@
             <div class="col-4 text-light">
                 <h4>Company</h4>
                 <ul class="list-unstyled mb-0">
-                    <li class="pb-2"><a href=""
+                    <li class="pb-2"><a href="/about"
                                         class="link-light link-underline-opacity-75-hover link-underline-opacity-0">About</a>
                     </li>
-                    <li class="pb-2"><a href=""
+                    <li class="pb-2"><a href="/blog"
                                         class="link-light link-underline-opacity-75-hover link-underline-opacity-0">Blog</a>
                     </li>
-                    <li class="pb-2"><a href=""
+                    <li class="pb-2"><a href="/contact"
                                         class="link-light link-underline-opacity-75-hover link-underline-opacity-0">Contact</a>
                     </li>
-                    <li class="pb-2"><a href=""
+                    <li class="pb-2"><a href="https://t.ly/twitter"
                                         class="link-light link-underline-opacity-75-hover link-underline-opacity-0">Twitter</a>
                     </li>
-                    <li class="pb-2"><a href=""
+                    <li class="pb-2"><a href="https://t.ly/facebook"
                                         class="link-light link-underline-opacity-75-hover link-underline-opacity-0">Facebook</a>
                     </li>
-                    <li class="pb-2"><a href=""
+                    <li class="pb-2"><a href="https://t.ly/linkedin"
                                         class="link-light link-underline-opacity-75-hover link-underline-opacity-0">LinkedIn</a>
                     </li>
                 </ul>

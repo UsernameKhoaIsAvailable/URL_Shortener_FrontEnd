@@ -61,7 +61,7 @@ def reset():
     return render_template('password_reset.html')
 
 
-@app.route('/tools')
+@tools_blueprint.route('/')
 def tools():
     return render_template('tool.html')
 
@@ -84,3 +84,8 @@ def about():
 @app.route('/contact')
 def contact():
     return render_template('contact.html')
+
+
+app.register_blueprint(product_blueprint)
+app.register_blueprint(tools_blueprint)
+app.register_blueprint(password_blueprint)

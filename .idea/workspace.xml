@@ -4,57 +4,24 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f3a9bc10-e3c1-4955-a730-5159809b06b2" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/FrontEnd_URL_Shortener.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/flaskr/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/flaskr/app.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/flaskr/static/css/bootstrap.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/flaskr/static/img/A-Deep-Dive-into-QR-Code-Tracking.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/flaskr/static/img/Best-URL-Shortener.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/flaskr/static/img/Bridging-the-Gap-Leveraging-Short-Links-in-Traditional-Marketing-Avenues.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/flaskr/static/img/Enhancing-Books-with-Links-and-QR-Codes.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/flaskr/static/img/Harnessing-the-Power-of-TLY-for-Church-Management.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/flaskr/static/img/How-do-I-shorten-a-URL-for-free.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/flaskr/static/img/How-to-Create-a-Tiny-URL.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/flaskr/static/img/How-to-Track-QR-Code-Scans.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/flaskr/static/img/SMS-Marketing-The-Essential-Role-of-Custom-Domains-1.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/flaskr/static/img/The-Game-Changer-for-Sharing-Links-in-Your-Podcast.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/flaskr/static/img/The-Hidden-Benefits-Of-Using-a-Link-Shortener.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/flaskr/static/img/URL-Shortener-API.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/flaskr/static/img/What-is-a-Url-Shortener-1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/flaskr/static/img/download.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/flaskr/static/img/link-management-custom-domain-1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/flaskr/static/img/link-management-smart-links-1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/flaskr/static/img/one-links-custom-domain.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/flaskr/static/img/onelink-example-1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/flaskr/static/img/rewardful.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/flaskr/static/img/tly-high-resolution-favicon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/flaskr/static/img/tly-high-resolution-logo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/flaskr/static/img/tly-link-management-1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/flaskr/static/img/yearly-plans.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/flaskr/static/js/bootstrap.bundle.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/flaskr/templates/OneLinks.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/flaskr/templates/about.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/flaskr/templates/affiliate.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/flaskr/templates/blog.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/flaskr/templates/contact.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/flaskr/templates/frequently_asked_questions.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/flaskr/templates/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/flaskr/templates/link_management.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/flaskr/templates/login.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/flaskr/templates/password_reset.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/flaskr/templates/privacy.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/flaskr/templates/screenshot.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/flaskr/templates/sign_up.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/flaskr/templates/terms.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/flaskr/templates/tool.html" afterDir="false" />
+    <list default="true" id="f3a9bc10-e3c1-4955-a730-5159809b06b2" name="Changes" comment="upload project">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flaskr/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/flaskr/app.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flaskr/templates/OneLinks.html" beforeDir="false" afterPath="$PROJECT_DIR$/flaskr/templates/OneLinks.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flaskr/templates/about.html" beforeDir="false" afterPath="$PROJECT_DIR$/flaskr/templates/about.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flaskr/templates/affiliate.html" beforeDir="false" afterPath="$PROJECT_DIR$/flaskr/templates/affiliate.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flaskr/templates/blog.html" beforeDir="false" afterPath="$PROJECT_DIR$/flaskr/templates/blog.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flaskr/templates/contact.html" beforeDir="false" afterPath="$PROJECT_DIR$/flaskr/templates/contact.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flaskr/templates/frequently_asked_questions.html" beforeDir="false" afterPath="$PROJECT_DIR$/flaskr/templates/frequently_asked_questions.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flaskr/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/flaskr/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flaskr/templates/link_management.html" beforeDir="false" afterPath="$PROJECT_DIR$/flaskr/templates/link_management.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flaskr/templates/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/flaskr/templates/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flaskr/templates/password_reset.html" beforeDir="false" afterPath="$PROJECT_DIR$/flaskr/templates/password_reset.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flaskr/templates/privacy.html" beforeDir="false" afterPath="$PROJECT_DIR$/flaskr/templates/privacy.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flaskr/templates/screenshot.html" beforeDir="false" afterPath="$PROJECT_DIR$/flaskr/templates/screenshot.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flaskr/templates/sign_up.html" beforeDir="false" afterPath="$PROJECT_DIR$/flaskr/templates/sign_up.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flaskr/templates/terms.html" beforeDir="false" afterPath="$PROJECT_DIR$/flaskr/templates/terms.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flaskr/templates/tool.html" beforeDir="false" afterPath="$PROJECT_DIR$/flaskr/templates/tool.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -97,6 +64,7 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "ASKED_ADD_EXTERNAL_FILES": "true",
+    "Flask server.FrontEnd_URL_Shortener.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "last_opened_file_path": "/media/khoa/Download/FrontEnd_URL_Shortener",
     "node.js.detected.package.eslint": "true",
@@ -115,8 +83,8 @@
       <recent name="$PROJECT_DIR$/static" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/flaskr" />
+      <recent name="$PROJECT_DIR$" />
     </key>
   </component>
   <component name="RunManager">
@@ -156,8 +124,18 @@
       <workItem from="1718648133731" duration="669000" />
       <workItem from="1718648822623" duration="4862000" />
       <workItem from="1718689701529" duration="39000" />
-      <workItem from="1718690218157" duration="1704000" />
+      <workItem from="1718690218157" duration="9570000" />
+      <workItem from="1718731726016" duration="5952000" />
     </task>
+    <task id="LOCAL-00001" summary="upload project">
+      <option name="closed" value="true" />
+      <created>1718692251924</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1718692251924</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -165,5 +143,10 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="upload project" />
+    <option name="LAST_COMMIT_MESSAGE" value="upload project" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/FrontEnd_URL_Shortener$FrontEnd_URL_Shortener.coverage" NAME="FrontEnd_URL_Shortener Coverage Results" MODIFIED="1718737244040" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>

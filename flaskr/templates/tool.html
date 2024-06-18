@@ -12,7 +12,7 @@
 <body>
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="container-sm">
-        <a class="navbar-brand" href="">
+        <a class="navbar-brand" href="/">
             <img src="{{ url_for('static', filename='img/tly-high-resolution-logo.png') }}" height="35" alt="">
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
@@ -28,16 +28,20 @@
                         Products
                     </a>
                     <ul class="dropdown-menu py-2" aria-labelledby="navbarDropdown">
-                        <li><a class="dropdown-item py-3" href="#"><i class="fa-solid fa-link"></i> Link Management</a>
+                        <li><a class="dropdown-item py-3" href="/products/link-management"><i
+                                class="fa-solid fa-link"></i> Link Management</a>
                         </li>
-                        <li><a class="dropdown-item py-3" href="#"><i class="fa-solid fa-square-arrow-up-right"></i>
+                        <li><a class="dropdown-item py-3" href="/products/one-links"><i
+                                class="fa-solid fa-square-arrow-up-right"></i>
                             OneLinks</a>
                         </li>
                         <li><a class="dropdown-item py-3" href="#"><i class="fa-solid fa-qrcode"></i> QR Code Generator</a>
                         </li>
-                        <li><a class="dropdown-item py-3" href="#"><i class="fa-brands fa-chrome"></i> Link Shortener
+                        <li><a class="dropdown-item py-3" href="https://t.ly/extension"><i
+                                class="fa-brands fa-chrome"></i> Link Shortener
                             Extension</a></li>
-                        <li><a class="dropdown-item py-3" href="#"><i class="fa-solid fa-image"></i> Screenshot Website</a>
+                        <li><a class="dropdown-item py-3" href="/tools/screenshot-website"><i
+                                class="fa-solid fa-image"></i> Screenshot Website</a>
                         </li>
                     </ul>
                 </li>
@@ -48,13 +52,14 @@
                         Resources
                     </a>
                     <ul class="dropdown-menu py-2" aria-labelledby="navbarDropdown">
-                        <li><a class="dropdown-item py-3" href="#"><i class="fa-solid fa-rss"></i> Blog</a></li>
+                        <li><a class="dropdown-item py-3" href="/blog"><i class="fa-solid fa-rss"></i> Blog</a></li>
                         <li><a class="dropdown-item py-3" href="#"><i class="fa-solid fa-chevron-right"></i><b>_</b> API
                             Documentation</a></li>
-                        <li><a class="dropdown-item py-3" href="#"><i class="fa-solid fa-circle-question"></i>
+                        <li><a class="dropdown-item py-3" href="/faq"><i class="fa-solid fa-circle-question"></i>
                             Frequently Asked
                             Questions</a></li>
-                        <li><a class="dropdown-item py-3" href="#"><i class="fa-solid fa-handshake"></i> Affiliate
+                        <li><a class="dropdown-item py-3" href="/affiliates"><i class="fa-solid fa-handshake"></i>
+                            Affiliate
                             Program</a>
                         </li>
                     </ul>
@@ -81,9 +86,9 @@
                     </ul>
                 </li>
             </ul>
-            <a href=""
+            <a href="/login"
                class="link-light link-opacity-50-hover link-underline-opacity-50-hover link-underline-opacity-0">Login</a>
-            <button type="button" class="btn btn-warning ms-3">Sign Up</button>
+            <a href="/register" type="button" class="btn btn-warning ms-3">Sign Up</a>
         </div>
     </div>
 </nav>
@@ -96,45 +101,45 @@
             <div class="card bg-body-secondary shadow-sm">
                 <div class="card-body">
                     <h4>Link Shield</h4>
-                    <p><a href=""
+                    <p><a href="https://linkshieldapi.com/"
                           class="link-warning link-opacity-75-hover link-underline-opacity-75-hover link-underline-opacity-0">Link
                         Shield</a> is an API platform that leverages the power of AI to detect malicious URLs and
                         protect your online security.</p>
                     <h4>Screenshot Website</h4>
-                    <p><a href=""
+                    <p><a href="/tools/screenshot-website"
                           class="link-warning link-opacity-75-hover link-underline-opacity-75-hover link-underline-opacity-0">Screenshot
                         Website</a> is an easy way to capture a screenshot of a full webpage of any URL.</p>
                     <h4>Link Unshortener</h4>
-                    <p><a href=""
+                    <p><a href="https://linkunshorten.com/"
                           class="link-warning link-opacity-75-hover link-underline-opacity-75-hover link-underline-opacity-0">URL
                         Unshortener</a> works with any short URL shortening services, such as T.LY. Expand short links
                         giving you a clear picture of where the link is ultimately sending you.</p>
                     <h4>URL Decoder</h4>
-                    <p><a href=""
+                    <p><a href="#"
                           class="link-warning link-opacity-75-hover link-underline-opacity-75-hover link-underline-opacity-0">URL
                         Decoder</a> is a tool to easily decode encoded string.</p>
                     <h4>MD5 Hash Generator</h4>
-                    <p><a href=""
+                    <p><a href="#"
                           class="link-warning link-opacity-75-hover link-underline-opacity-75-hover link-underline-opacity-0">MD5
                         Hash Generator</a> - Create MD5 hashes from any string using this simple tool.</p>
                     <h4>UTM URL Builder</h4>
-                    <p><a href=""
+                    <p><a href="#"
                           class="link-warning link-opacity-75-hover link-underline-opacity-75-hover link-underline-opacity-0">UTM
                         URL Builder</a> allows you to easily add campaign parameters to URLs so you can measure Custom
                         Campaigns in Google Analytics.</p>
                     <h4>Weather Extension</h4>
-                    <p><a href=""
+                    <p><a href="https://weatherextension.com/"
                           class="link-warning link-opacity-75-hover link-underline-opacity-75-hover link-underline-opacity-0">Weather
                         Extension</a> is the best way to check the forecast right in your browser! Weather automatically
                         locates and displays your current weather forecast, hourly and 7-day forecast. The app icon will
                         automatically update to your current temperature.</p>
                     <h4>Link Expander</h4>
-                    <p><a href=""
+                    <p><a href="#"
                           class="link-warning link-opacity-75-hover link-underline-opacity-75-hover link-underline-opacity-0">Link
                         Expander</a> is a tool to show the user the final redirect of any URL. This is especially
                         important if the link you are clicking on is not from a reliable source.</p>
                     <h4>IP Address</h4>
-                    <p><a href=""
+                    <p><a href="#"
                           class="link-warning link-opacity-75-hover link-underline-opacity-75-hover link-underline-opacity-0">What
                         is My Ip Address</a> is a tool to show you what your current IP address is. See your IP Address
                         city, state, and country.</p>
@@ -150,19 +155,19 @@
             <div class="col-4 text-light">
                 <h4>Features</h4>
                 <ul class="list-unstyled mb-0">
-                    <li class="pb-2"><a href=""
+                    <li class="pb-2"><a href="https://t.ly/extension"
                                         class="link-light link-underline-opacity-75-hover link-underline-opacity-0">Extension</a>
                     </li>
-                    <li class="pb-2"><a href=""
+                    <li class="pb-2"><a href="#"
                                         class="link-light link-underline-opacity-75-hover link-underline-opacity-0">API
                         Docs</a></li>
-                    <li class="pb-2"><a href=""
+                    <li class="pb-2"><a href="#"
                                         class="link-light link-underline-opacity-75-hover link-underline-opacity-0">OR
                         Code Generator</a></li>
-                    <li class="pb-2"><a href=""
+                    <li class="pb-2"><a href="/tools"
                                         class="link-light link-underline-opacity-75-hover link-underline-opacity-0">Tools</a>
                     </li>
-                    <li class="pb-2"><a href=""
+                    <li class="pb-2"><a href="/register"
                                         class="link-light link-underline-opacity-75-hover link-underline-opacity-0">Sign
                         Up</a></li>
                 </ul>
@@ -170,19 +175,19 @@
             <div class="col-4 text-light">
                 <h4>Resources</h4>
                 <ul class="list-unstyled mb-0">
-                    <li class="pb-2"><a href=""
+                    <li class="pb-2"><a href="mailto:support@t.ly?Subject=Report%20Link"
                                         class="link-light link-underline-opacity-75-hover link-underline-opacity-0">Report
                         Link</a></li>
-                    <li class="pb-2"><a href=""
+                    <li class="pb-2"><a href="/faq"
                                         class="link-light link-underline-opacity-75-hover link-underline-opacity-0">FAQ</a>
                     </li>
-                    <li class="pb-2"><a href=""
+                    <li class="pb-2"><a href="/affiliates"
                                         class="link-light link-underline-opacity-75-hover link-underline-opacity-0">Affiliates</a>
                     </li>
-                    <li class="pb-2"><a href=""
+                    <li class="pb-2"><a href="/privacy"
                                         class="link-light link-underline-opacity-75-hover link-underline-opacity-0">Privacy</a>
                     </li>
-                    <li class="pb-2"><a href=""
+                    <li class="pb-2"><a href="/terms"
                                         class="link-light link-underline-opacity-75-hover link-underline-opacity-0">Terms</a>
                     </li>
                 </ul>
@@ -190,22 +195,22 @@
             <div class="col-4 text-light">
                 <h4>Company</h4>
                 <ul class="list-unstyled mb-0">
-                    <li class="pb-2"><a href=""
+                    <li class="pb-2"><a href="/about"
                                         class="link-light link-underline-opacity-75-hover link-underline-opacity-0">About</a>
                     </li>
-                    <li class="pb-2"><a href=""
+                    <li class="pb-2"><a href="/blog"
                                         class="link-light link-underline-opacity-75-hover link-underline-opacity-0">Blog</a>
                     </li>
-                    <li class="pb-2"><a href=""
+                    <li class="pb-2"><a href="/contact"
                                         class="link-light link-underline-opacity-75-hover link-underline-opacity-0">Contact</a>
                     </li>
-                    <li class="pb-2"><a href=""
+                    <li class="pb-2"><a href="https://t.ly/twitter"
                                         class="link-light link-underline-opacity-75-hover link-underline-opacity-0">Twitter</a>
                     </li>
-                    <li class="pb-2"><a href=""
+                    <li class="pb-2"><a href="https://t.ly/facebook"
                                         class="link-light link-underline-opacity-75-hover link-underline-opacity-0">Facebook</a>
                     </li>
-                    <li class="pb-2"><a href=""
+                    <li class="pb-2"><a href="https://t.ly/linkedin"
                                         class="link-light link-underline-opacity-75-hover link-underline-opacity-0">LinkedIn</a>
                     </li>
                 </ul>

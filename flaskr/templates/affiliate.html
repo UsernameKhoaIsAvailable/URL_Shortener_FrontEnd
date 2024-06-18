@@ -18,7 +18,7 @@
 <body>
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="container-sm">
-        <a class="navbar-brand" href="">
+        <a class="navbar-brand" href="/">
             <img src="{{ url_for('static', filename='img/tly-high-resolution-logo.png') }}" height="35" alt="">
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -34,17 +34,17 @@
                         Products
                     </a>
                     <ul class="dropdown-menu py-2" aria-labelledby="navbarDropdown">
-                        <li><a class="dropdown-item py-3" href="#"><i class="fa-solid fa-link"></i> Link
+                        <li><a class="dropdown-item py-3" href="/products/link-management"><i class="fa-solid fa-link"></i> Link
                             Management</a></li>
-                        <li><a class="dropdown-item py-3" href="#"><i class="fa-solid fa-square-arrow-up-right"></i>
+                        <li><a class="dropdown-item py-3" href="/products/one-links"><i class="fa-solid fa-square-arrow-up-right"></i>
                             OneLinks</a>
                         </li>
                         <li><a class="dropdown-item py-3" href="#"><i class="fa-solid fa-qrcode"></i> QR Code
                             Generator</a></li>
-                        <li><a class="dropdown-item py-3" href="#"><i class="fa-brands fa-chrome"></i> Link
+                        <li><a class="dropdown-item py-3" href="https://t.ly/extension"><i class="fa-brands fa-chrome"></i> Link
                             Shortener
                             Extension</a></li>
-                        <li><a class="dropdown-item py-3" href="#"><i class="fa-solid fa-image"></i> Screenshot
+                        <li><a class="dropdown-item py-3" href="/tools/screenshot-website"><i class="fa-solid fa-image"></i> Screenshot
                             Website</a></li>
                     </ul>
                 </li>
@@ -54,14 +54,14 @@
                         Resources
                     </a>
                     <ul class="dropdown-menu py-2" aria-labelledby="navbarDropdown">
-                        <li><a class="dropdown-item py-3" href="#"><i class="fa-solid fa-rss"></i> Blog</a></li>
+                        <li><a class="dropdown-item py-3" href="/blog"><i class="fa-solid fa-rss"></i> Blog</a></li>
                         <li><a class="dropdown-item py-3" href="#"><i class="fa-solid fa-chevron-right"></i><b>_</b>
                             API
                             Documentation</a></li>
-                        <li><a class="dropdown-item py-3" href="#"><i class="fa-solid fa-circle-question"></i>
+                        <li><a class="dropdown-item py-3" href="/faq"><i class="fa-solid fa-circle-question"></i>
                             Frequently Asked
                             Questions</a></li>
-                        <li><a class="dropdown-item py-3" href="#"><i class="fa-solid fa-handshake"></i> Affiliate
+                        <li><a class="dropdown-item py-3" href="/affiliates"><i class="fa-solid fa-handshake"></i> Affiliate
                             Program</a>
                         </li>
                     </ul>
@@ -87,9 +87,9 @@
                     </ul>
                 </li>
             </ul>
-            <a href=""
+            <a href="/login"
                class="link-light link-opacity-50-hover link-underline-opacity-50-hover link-underline-opacity-0">Login</a>
-            <button type="button" class="btn btn-warning ms-3">Sign Up</button>
+            <a href="/register" type="button" class="btn btn-warning ms-3">Sign Up</a>
         </div>
     </div>
 </nav>
@@ -99,7 +99,7 @@
             <h1>Be Our Affiliate. Earn 20% Commission!</h1>
             <p class="lead">Partner with T.LY to earn a recurring <b>20% commission</b> every month for a year!</p>
             <div class="text-center pb-3">
-                <a href="" role="button" class="btn btn-warning"> Join Affiliate Program</a>
+                <a href="#" role="button" class="btn btn-warning"> Join Affiliate Program</a>
             </div>
         </div>
     </div>
@@ -143,7 +143,7 @@
         <div class="col text-center">
             <h2>Ready to partner with us?</h2>
             <div class="text-center my-5">
-                <a href="" role="button" class="btn btn-warning">Get Started Today</a>
+                <a href="#" role="button" class="btn btn-warning">Get Started Today</a>
             </div>
         </div>
     </div>
@@ -154,19 +154,19 @@
             <div class="col-4 text-light">
                 <h4>Features</h4>
                 <ul class="list-unstyled mb-0">
-                    <li class="pb-2"><a href=""
+                    <li class="pb-2"><a href="https://t.ly/extension"
                                         class="link-light link-underline-opacity-75-hover link-underline-opacity-0">Extension</a>
                     </li>
-                    <li class="pb-2"><a href=""
+                    <li class="pb-2"><a href="#"
                                         class="link-light link-underline-opacity-75-hover link-underline-opacity-0">API
                         Docs</a></li>
-                    <li class="pb-2"><a href=""
+                    <li class="pb-2"><a href="#"
                                         class="link-light link-underline-opacity-75-hover link-underline-opacity-0">OR
                         Code Generator</a></li>
-                    <li class="pb-2"><a href=""
+                    <li class="pb-2"><a href="/tools"
                                         class="link-light link-underline-opacity-75-hover link-underline-opacity-0">Tools</a>
                     </li>
-                    <li class="pb-2"><a href=""
+                    <li class="pb-2"><a href="/register"
                                         class="link-light link-underline-opacity-75-hover link-underline-opacity-0">Sign
                         Up</a></li>
                 </ul>
@@ -174,19 +174,19 @@
             <div class="col-4 text-light">
                 <h4>Resources</h4>
                 <ul class="list-unstyled mb-0">
-                    <li class="pb-2"><a href=""
+                    <li class="pb-2"><a href="mailto:support@t.ly?Subject=Report%20Link"
                                         class="link-light link-underline-opacity-75-hover link-underline-opacity-0">Report
                         Link</a></li>
-                    <li class="pb-2"><a href=""
+                    <li class="pb-2"><a href="/faq"
                                         class="link-light link-underline-opacity-75-hover link-underline-opacity-0">FAQ</a>
                     </li>
-                    <li class="pb-2"><a href=""
+                    <li class="pb-2"><a href="/affiliates"
                                         class="link-light link-underline-opacity-75-hover link-underline-opacity-0">Affiliates</a>
                     </li>
-                    <li class="pb-2"><a href=""
+                    <li class="pb-2"><a href="/privacy"
                                         class="link-light link-underline-opacity-75-hover link-underline-opacity-0">Privacy</a>
                     </li>
-                    <li class="pb-2"><a href=""
+                    <li class="pb-2"><a href="/terms"
                                         class="link-light link-underline-opacity-75-hover link-underline-opacity-0">Terms</a>
                     </li>
                 </ul>
@@ -194,22 +194,22 @@
             <div class="col-4 text-light">
                 <h4>Company</h4>
                 <ul class="list-unstyled mb-0">
-                    <li class="pb-2"><a href=""
+                    <li class="pb-2"><a href="/about"
                                         class="link-light link-underline-opacity-75-hover link-underline-opacity-0">About</a>
                     </li>
-                    <li class="pb-2"><a href=""
+                    <li class="pb-2"><a href="/blog"
                                         class="link-light link-underline-opacity-75-hover link-underline-opacity-0">Blog</a>
                     </li>
-                    <li class="pb-2"><a href=""
+                    <li class="pb-2"><a href="/contact"
                                         class="link-light link-underline-opacity-75-hover link-underline-opacity-0">Contact</a>
                     </li>
-                    <li class="pb-2"><a href=""
+                    <li class="pb-2"><a href="https://t.ly/twitter"
                                         class="link-light link-underline-opacity-75-hover link-underline-opacity-0">Twitter</a>
                     </li>
-                    <li class="pb-2"><a href=""
+                    <li class="pb-2"><a href="https://t.ly/facebook"
                                         class="link-light link-underline-opacity-75-hover link-underline-opacity-0">Facebook</a>
                     </li>
-                    <li class="pb-2"><a href=""
+                    <li class="pb-2"><a href="https://t.ly/linkedin"
                                         class="link-light link-underline-opacity-75-hover link-underline-opacity-0">LinkedIn</a>
                     </li>
                 </ul>
