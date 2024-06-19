@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f3a9bc10-e3c1-4955-a730-5159809b06b2" name="Changes" comment="attach links to &lt;a&gt; tag in template">
+    <list default="true" id="f3a9bc10-e3c1-4955-a730-5159809b06b2" name="Changes" comment="reformat template, add comment in app.py">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/flaskr/templates/OneLinks.html" beforeDir="false" afterPath="$PROJECT_DIR$/flaskr/templates/OneLinks.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/flaskr/templates/about.html" beforeDir="false" afterPath="$PROJECT_DIR$/flaskr/templates/about.html" afterDir="false" />
@@ -125,7 +125,7 @@
       <workItem from="1718689701529" duration="39000" />
       <workItem from="1718690218157" duration="9570000" />
       <workItem from="1718731726016" duration="6590000" />
-      <workItem from="1718799083891" duration="5643000" />
+      <workItem from="1718799083891" duration="8465000" />
     </task>
     <task id="LOCAL-00001" summary="upload project">
       <option name="closed" value="true" />
@@ -143,7 +143,15 @@
       <option name="project" value="LOCAL" />
       <updated>1718737694442</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="reformat template, add comment in app.py">
+      <option name="closed" value="true" />
+      <created>1718815786042</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1718815786042</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -153,7 +161,8 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="upload project" />
     <MESSAGE value="attach links to &lt;a&gt; tag in template" />
-    <option name="LAST_COMMIT_MESSAGE" value="attach links to &lt;a&gt; tag in template" />
+    <MESSAGE value="reformat template, add comment in app.py" />
+    <option name="LAST_COMMIT_MESSAGE" value="reformat template, add comment in app.py" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/FrontEnd_URL_Shortener$FrontEnd_URL_Shortener.coverage" NAME="FrontEnd_URL_Shortener Coverage Results" MODIFIED="1718737244040" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
