@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <title>T.LY: World's Shortest URL Shortener</title>
     <meta charset="utf-8"/>
@@ -9,7 +8,6 @@
     <link rel="icon" href="{{ url_for('static', filename='img/tly-high-resolution-favicon.png') }}" type="image/png"
           sizes="32x32">
 </head>
-
 <body>
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="container-sm">
@@ -24,72 +22,53 @@
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                       data-bs-toggle="dropdown"
-                       aria-expanded="false">
-                        Products
-                    </a>
+                       data-bs-toggle="dropdown" aria-expanded="false">Products</a>
                     <ul class="dropdown-menu py-2" aria-labelledby="navbarDropdown">
                         <li><a class="dropdown-item py-3" href="/products/link-management"><i
-                                class="fa-solid fa-link"></i> Link Management</a>
-                        </li>
+                                class="fa-solid fa-link"></i> Link Management</a></li>
                         <li><a class="dropdown-item py-3" href="/products/one-links"><i
-                                class="fa-solid fa-square-arrow-up-right"></i>
-                            OneLinks</a>
-                        </li>
+                                class="fa-solid fa-square-arrow-up-right"></i>OneLinks</a></li>
                         <li><a class="dropdown-item py-3" href="#"><i class="fa-solid fa-qrcode"></i> QR Code Generator</a>
                         </li>
                         <li><a class="dropdown-item py-3" href="https://t.ly/extension"><i
-                                class="fa-brands fa-chrome"></i> Link Shortener
-                            Extension</a></li>
+                                class="fa-brands fa-chrome"></i> Link Shortener Extension</a></li>
                         <li><a class="dropdown-item py-3" href="/tools/screenshot-website"><i
-                                class="fa-solid fa-image"></i> Screenshot Website</a>
-                        </li>
+                                class="fa-solid fa-image"></i> Screenshot Website</a></li>
                     </ul>
                 </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                       data-bs-toggle="dropdown"
-                       aria-expanded="false">
-                        Resources
-                    </a>
+                       data-bs-toggle="dropdown" aria-expanded="false">Resources</a>
                     <ul class="dropdown-menu py-2" aria-labelledby="navbarDropdown">
                         <li><a class="dropdown-item py-3" href="/blog"><i class="fa-solid fa-rss"></i> Blog</a></li>
-                        <li><a class="dropdown-item py-3" href="#"><i class="fa-solid fa-chevron-right"></i><b>_</b> API
+                        <li><a class="dropdown-item py-3" href="#"><i class="fa-solid fa-chevron-right"></i><b>_</b>API
                             Documentation</a></li>
-                        <li><a class="dropdown-item py-3" href="/faq"><i class="fa-solid fa-circle-question"></i>
-                            Frequently Asked
-                            Questions</a></li>
-                        <li><a class="dropdown-item py-3" href="/affiliates"><i class="fa-solid fa-handshake"></i>
-                            Affiliate
-                            Program</a>
-                        </li>
+                        <li><a class="dropdown-item py-3" href="/faq"><i class="fa-solid fa-circle-question"></i>Frequently
+                            Asked Questions</a></li>
+                        <li><a class="dropdown-item py-3" href="/affiliates"><i class="fa-solid fa-handshake"></i>Affiliate
+                            Program</a></li>
                     </ul>
                 </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                       data-bs-toggle="dropdown"
-                       aria-expanded="false">
-                        Comparisons
-                    </a>
+                       data-bs-toggle="dropdown" aria-expanded="false">Comparisons</a>
                     <ul class="dropdown-menu py-2" aria-labelledby="navbarDropdown">
                         <li><a class="dropdown-item py-3" href="#"><i class="fa-solid fa-plus"></i> T.LY vs Bitly</a>
                         </li>
                         <li><a class="dropdown-item py-3" href="#"><i class="fa-solid fa-link"></i> Bitly
                             Alternatives</a></li>
                         <li><a class="dropdown-item py-3" href="#"><i class="fa-brands fa-google"></i> Google URL
-                            Shortener
-                            Alternatives</a></li>
+                            Shortener Alternatives</a></li>
                         <li><a class="dropdown-item py-3" href="#"><i class="fa-solid fa-compress"></i> T.LY vs TinyURL</a>
                         </li>
                         <li><a class="dropdown-item py-3" href="#"><i class="fa-solid fa-list-ul"></i> Best URL
-                            Shortener API</a>
-                        </li>
+                            Shortener API</a></li>
                     </ul>
                 </li>
             </ul>
             <a href="/login"
                class="link-light link-opacity-50-hover link-underline-opacity-50-hover link-underline-opacity-0">Login</a>
-            <a href="/register" role="button" class="btn btn-warning ms-3">Sign Up</a>
+            <a href="/register" type="button" class="btn btn-warning ms-3">Sign Up</a>
         </div>
     </div>
 </nav>
@@ -118,16 +97,14 @@
             <p>T.LY URL Shortener makes long links look cleaner and easier to share! Add your own <a href="/register"
                                                                                                      class="link-warning link-opacity-75-hover link-underline-opacity-75-hover link-underline-opacity-0">Custom
                 Domains</a> to personalize your brand! Over 20 million monthly visitors trust T.LY. Easily create
-                trackable
-                QR Codes.</p>
+                trackable QR Codes.</p>
         </div>
         <div class="col-4 text-center">
             <i class="fa-solid fa-chart-line fa-5x"></i>
             <h2><b>Track Link Clicks</b></h2>
             <p>With over 40 million links shortened and tracked over 1 billion clicks, T.LY lets you know where users
-                are
-                coming from and is a click counter tool to <a href="/register"
-                                                              class="link-warning link-opacity-75-hover link-underline-opacity-75-hover link-underline-opacity-0">track
+                are coming from and is a click counter tool to <a href="/register"
+                                                                  class="link-warning link-opacity-75-hover link-underline-opacity-75-hover link-underline-opacity-0">track
                     link analytics</a>. Just add a + at the end of any short URL to see statistics.</p>
         </div>
         <div class="col-4 text-center">
@@ -136,8 +113,7 @@
             <p>Install our free <a href="https://t.ly/extension"
                                    class="link-warning link-opacity-75-hover link-underline-opacity-75-hover link-underline-opacity-0">Browser
                 Extension</a> with over 450,000 users from the extension store to automatically shorten links in one
-                easy
-                click! We support Chrome, Firefox, Edge and Opera.</p>
+                easy click! We support Chrome, Firefox, Edge and Opera.</p>
         </div>
     </div>
     <div class="row">
@@ -145,8 +121,7 @@
             <div class="bg-secondary-subtle text-center py-3 rounded">
                 <p class="mb-0">Looking for API access? <a href="/register"
                                                            class="link-warning link-opacity-75-hover link-underline-opacity-75-hover link-underline-opacity-0">Sign
-                    Up
-                    Here</a></p>
+                    Up Here</a></p>
             </div>
         </div>
     </div>
@@ -165,15 +140,13 @@
                 <div class="card-body bg-body-secondary pt-0 d-grid">
                     <ul class="list-unstyled m-0 p-0">
                         <li class="d-flex align-items-center mb-2"><i
-                                class="fa-solid fa-arrow-down-short-wide mx-2"></i>500
-                            Monthly Short Links
+                                class="fa-solid fa-arrow-down-short-wide mx-2"></i>500 Monthly Short Links
                         </li>
                         <li class="d-flex align-items-center mb-2"><i class="fa-solid fa-arrow-turn-up mx-2"></i>Unlimited
                             Clicks
                         </li>
                         <li class="d-flex align-items-center mb-2"><i class="fa-solid fa-chart-bar mx-2"></i>Advanced
-                            Link
-                            Analytics
+                            Link Analytics
                         </li>
                         <li class="d-flex align-items-center mb-2"><i class="fa-solid fa-qrcode mx-2"></i>Trackable QR
                             Codes
@@ -211,14 +184,12 @@
                 <div class="card-body bg-body-secondary pt-0 d-grid">
                     <ul class="list-unstyled m-0 p-0">
                         <li class="d-flex align-items-center mb-2"><i
-                                class="fa-solid fa-arrow-down-short-wide mx-2"></i><b>4000
-                            Monthly Short Links</b></li>
+                                class="fa-solid fa-arrow-down-short-wide mx-2"></i><b>4000 Monthly Short Links</b></li>
                         <li class="d-flex align-items-center mb-2"><i class="fa-solid fa-arrow-turn-up mx-2"></i>Unlimited
                             Clicks
                         </li>
                         <li class="d-flex align-items-center mb-2"><i class="fa-solid fa-chart-bar mx-2"></i>Advanced
-                            Link
-                            Analytics
+                            Link Analytics
                         </li>
                         <li class="d-flex align-items-center mb-2"><i class="fa-solid fa-qrcode mx-2"></i>Trackable QR
                             Codes
@@ -256,8 +227,7 @@
                 <div class="card-body bg-body-secondary pt-0 d-grid">
                     <ul class="list-unstyled m-0 p-0">
                         <li class="d-flex align-items-center mb-2"><i
-                                class="fa-solid fa-arrow-down-short-wide mx-2"></i><b>10000
-                            Monthly Short Links</b></li>
+                                class="fa-solid fa-arrow-down-short-wide mx-2"></i><b>10000 Monthly Short Links</b></li>
                         <li class="d-flex align-items-center mb-2"><i class="fa-solid fa-users mx-2"></i><b>Teams</b>
                         </li>
                         <li class="d-flex align-items-center mb-2"><i class="fa-regular fa-circle-xmark mx-2"></i><b>Priority
@@ -266,8 +236,7 @@
                             Clicks
                         </li>
                         <li class="d-flex align-items-center mb-2"><i class="fa-solid fa-chart-bar mx-2"></i>Advanced
-                            Link
-                            Analytics
+                            Link Analytics
                         </li>
                         <li class="d-flex align-items-center mb-2"><i class="fa-solid fa-qrcode mx-2"></i>Trackable QR
                             Codes
@@ -299,8 +268,7 @@
             <div class="bg-secondary-subtle text-center py-3 rounded">
                 <p class="m-0">Need a larger plan with teams? <a href="mailto:support@t.ly?Subject=T.LY Plans"
                                                                  class="link-warning link-opacity-75-hover link-underline-opacity-75-hover link-underline-opacity-0">Contact
-                    us
-                </a>and we will tailor a solution to meet your needs!</p>
+                    us</a>and we will tailor a solution to meet your needs!</p>
             </div>
         </div>
     </div>
@@ -328,14 +296,11 @@
                          class="card-img-top img-size" alt="">
                     <div class="card-body border-top-0 border-start border-end border-bottom shadow-sm bg-body-secondary">
                         <h4 class="card-title"><b>Best URL Shortener</b></h4>
-                        <p class="card-text mb-3">As a marketer, the ability to create short links for your content
-                            and campaigns
-                            is an essential part of staying competitive in today's digital landscape. One great tool
-                            for this is
-                            T.LY - the best URL Shortener on the market that helps you save time, simplify workflow
-                            and increase
-                            efficiency. With just a few clicks, you can turn any long URL into a shortened version
-                            that l...</p>
+                        <p class="card-text mb-3">As a marketer, the ability to create short links for your content and
+                            campaigns is an essential part of staying competitive in today's digital landscape. One
+                            great tool for this is T.LY - the best URL Shortener on the market that helps you save time,
+                            simplify workflow and increase efficiency. With just a few clicks, you can turn any long URL
+                            into a shortened version that l...</p>
                     </div>
                 </a>
             </div>
@@ -347,14 +312,11 @@
                          class="card-img-top img-size" alt="">
                     <div class="card-body border-top-0 border-start border-end border-bottom shadow-sm bg-body-secondary">
                         <h4 class="card-title"><b>How to Create a Short Url</b></h4>
-                        <p class="card-text">Are you a marketer looking for an easy and effective way to make your
-                            link short,
-                            memorable, and sharable? Look no further than the world of short URLs. With their
-                            simple-to-create
-                            formats and ability to easily fit into text messages or email subject lines, short URLs
-                            are becoming
-                            increasingly popular among marketers who want quick access to the meaty information in
-                            long w...</p>
+                        <p class="card-text">Are you a marketer looking for an easy and effective way to make your link
+                            short, memorable, and sharable? Look no further than the world of short URLs. With their
+                            simple-to-create formats and ability to easily fit into text messages or email subject
+                            lines, short URLs are becoming increasingly popular among marketers who want quick access to
+                            the meaty information in long w...</p>
                     </div>
                 </a>
             </div>
@@ -366,14 +328,11 @@
                          class="card-img-top img-size" alt="">
                     <div class="card-body border-top-0 border-start border-end border-bottom shadow-sm bg-body-secondary">
                         <h4 class="card-title"><b>What is a Url Shortener?</b></h4>
-                        <p class="card-text">If you've ever seen a link that's been shortened using a service like
-                            T.LY, TinyURL,
-                            Firebase Dynamic Links, or Goo.gl, you may wonder what a link shortener is and how it
-                            works. A URL
-                            shortener is a tool that can take a long, complex URL and turn it into a much shorter
-                            link that is easy
-                            to share. This can be useful when sharing links on social media, SMS, or email,
-                            especia...</p>
+                        <p class="card-text">If you've ever seen a link that's been shortened using a service like T.LY,
+                            TinyURL, Firebase Dynamic Links, or Goo.gl, you may wonder what a link shortener is and how
+                            it works. A URL shortener is a tool that can take a long, complex URL and turn it into a
+                            much shorter link that is easy to share. This can be useful when sharing links on social
+                            media, SMS, or email, especia...</p>
                     </div>
                 </a>
             </div>
@@ -382,18 +341,14 @@
             <div class="card w-75 mt-4 border-bottom-0 border-start-0 border-end-0 card-hover">
                 <a href="#" class="stretched-link link-dark link-underline-opacity-75-hover link-underline-opacity-0">
                     <img src="{{ url_for('static', filename='img/The-Hidden-Benefits-Of-Using-a-Link-Shortener.jpg') }}"
-                         class="card-img-top img-size"
-                         alt="">
+                         class="card-img-top img-size" alt="">
                     <div class="card-body border-top-0 border-start border-end border-bottom shadow-sm bg-body-secondary">
                         <h4 class="card-title"><b>The Hidden Benefits Of Using a Link Shortener</b></h4>
                         <p class="card-text mb-3">Do you use a link shortener when sharing links online? If not, you
-                            could be
-                            missing out on some hidden benefits. Link shorteners can help improve click-through
-                            rates, track link
-                            activity, and more. This post will explore some of the little-known advantages of using
-                            a URL shortener.
-                            So if you're not already using one, read on to learn more about how it can benefit your
-                            mark...</p>
+                            could be missing out on some hidden benefits. Link shorteners can help improve click-through
+                            rates, track link activity, and more. This post will explore some of the little-known
+                            advantages of using a URL shortener. So if you're not already using one, read on to learn
+                            more about how it can benefit your mark...</p>
                     </div>
                 </a>
             </div>
@@ -402,17 +357,14 @@
             <div class="card w-75 mt-4 border-bottom-0 border-start-0 border-end-0 card-hover">
                 <a href="#" class="stretched-link link-dark link-underline-opacity-75-hover link-underline-opacity-0">
                     <img src="{{ url_for('static', filename='img/URL-Shortener-API.jpg') }}"
-                         class="card-img-top img-size" height="40%" alt="">
+                         class="card-img-top img-size" alt="">
                     <div class="card-body border-top-0 border-start border-end border-bottom shadow-sm bg-body-secondary">
                         <h4 class="card-title"><b>Best URL Shortener API</b></h4>
                         <p class="card-text">A URL shortener API can be an extremely useful tool for businesses and
-                            website
-                            owners. Using a URL shortener API, you can shorten long and complex URLs into shorter,
-                            more manageable
-                            ones. This can be helpful in a number of ways. First, it can make it easier for people
-                            to remember your
-                            website's URL. Second, it can help to improve your click-through rates, as shorter URLs
-                            a...</p>
+                            website owners. Using a URL shortener API, you can shorten long and complex URLs into
+                            shorter, more manageable ones. This can be helpful in a number of ways. First, it can make
+                            it easier for people to remember your website's URL. Second, it can help to improve your
+                            click-through rates, as shorter URLs a...</p>
                     </div>
                 </a>
             </div>
@@ -421,19 +373,14 @@
             <div class="card w-75 mt-4 border-bottom-0 border-start-0 border-end-0 card-hover">
                 <a href="#" class="stretched-link link-dark link-underline-opacity-75-hover link-underline-opacity-0">
                     <img src="{{ url_for('static', filename='img/How-do-I-shorten-a-URL-for-free.jpg') }}"
-                         class="card-img-top img-hover img-size"
-                         alt=""
-                         height="40%">
+                         class="card-img-top img-hover img-size" alt="">
                     <div class="card-body border-top-0 border-start border-end border-bottom shadow-sm bg-body-secondary">
                         <h4 class="card-title"><b>How do I shorten a URL for free?</b></h4>
                         <p class="card-text">Back in 2018, Google shut down its URL Shortener service, but users are
-                            still looking
-                            for the perfect replacement for this simple URL shortener service. With so many options
-                            available, it's
-                            hard not to filter down and find the best alternative to goo.gl. T.LY is the best link
-                            management
-                            service to track, brand, and share short URLs. T.LY offers the ability to create the
-                            sh...</p>
+                            still looking for the perfect replacement for this simple URL shortener service. With so
+                            many options available, it's hard not to filter down and find the best alternative to
+                            goo.gl. T.LY is the best link management service to track, brand, and share short URLs. T.LY
+                            offers the ability to create the sh...</p>
                     </div>
                 </a>
             </div>

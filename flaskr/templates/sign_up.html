@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <title>Sign Up to Start Managing Your Short Link with T.LY</title>
     <meta charset="utf-8"/>
@@ -9,76 +8,61 @@
     <link rel="icon" href="{{ url_for('static', filename='img/tly-high-resolution-favicon.png') }}" type="image/png"
           sizes="32x32">
 </head>
-
 <body>
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="container-sm">
         <a class="navbar-brand" href="/">
             <img src="{{ url_for('static', filename='img/tly-high-resolution-logo.png') }}" height="35" alt="">
         </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                       data-bs-toggle="dropdown" aria-expanded="false">
-                        Products
-                    </a>
+                       data-bs-toggle="dropdown" aria-expanded="false">Products</a>
                     <ul class="dropdown-menu py-2" aria-labelledby="navbarDropdown">
-                        <li><a class="dropdown-item py-3" href="/products/link-management"><i class="fa-solid fa-link"></i> Link
-                            Management</a></li>
-                        <li><a class="dropdown-item py-3" href="/products/one-links"><i class="fa-solid fa-square-arrow-up-right"></i>
-                            OneLinks</a>
+                        <li><a class="dropdown-item py-3" href="/products/link-management"><i
+                                class="fa-solid fa-link"></i> Link Management</a></li>
+                        <li><a class="dropdown-item py-3" href="/products/one-links"><i
+                                class="fa-solid fa-square-arrow-up-right"></i>OneLinks</a></li>
+                        <li><a class="dropdown-item py-3" href="#"><i class="fa-solid fa-qrcode"></i> QR Code Generator</a>
                         </li>
-                        <li><a class="dropdown-item py-3" href="#"><i class="fa-solid fa-qrcode"></i> QR Code
-                            Generator</a></li>
-                        <li><a class="dropdown-item py-3" href="https://t.ly/extension"><i class="fa-brands fa-chrome"></i> Link
-                            Shortener
-                            Extension</a></li>
-                        <li><a class="dropdown-item py-3" href="/tools/screenshot-website"><i class="fa-solid fa-image"></i> Screenshot
-                            Website</a></li>
+                        <li><a class="dropdown-item py-3" href="https://t.ly/extension"><i
+                                class="fa-brands fa-chrome"></i> Link Shortener Extension</a></li>
+                        <li><a class="dropdown-item py-3" href="/tools/screenshot-website"><i
+                                class="fa-solid fa-image"></i> Screenshot Website</a></li>
                     </ul>
                 </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                       data-bs-toggle="dropdown" aria-expanded="false">
-                        Resources
-                    </a>
+                       data-bs-toggle="dropdown" aria-expanded="false">Resources</a>
                     <ul class="dropdown-menu py-2" aria-labelledby="navbarDropdown">
                         <li><a class="dropdown-item py-3" href="/blog"><i class="fa-solid fa-rss"></i> Blog</a></li>
-                        <li><a class="dropdown-item py-3" href="#"><i class="fa-solid fa-chevron-right"></i><b>_</b>
-                            API
+                        <li><a class="dropdown-item py-3" href="#"><i class="fa-solid fa-chevron-right"></i><b>_</b>API
                             Documentation</a></li>
-                        <li><a class="dropdown-item py-3" href="/faq"><i class="fa-solid fa-circle-question"></i>
-                            Frequently Asked
-                            Questions</a></li>
-                        <li><a class="dropdown-item py-3" href="/affiliates"><i class="fa-solid fa-handshake"></i> Affiliate
-                            Program</a>
-                        </li>
+                        <li><a class="dropdown-item py-3" href="/faq"><i class="fa-solid fa-circle-question"></i>Frequently
+                            Asked Questions</a></li>
+                        <li><a class="dropdown-item py-3" href="/affiliates"><i class="fa-solid fa-handshake"></i>Affiliate
+                            Program</a></li>
                     </ul>
                 </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                       data-bs-toggle="dropdown" aria-expanded="false">
-                        Comparisons
-                    </a>
+                       data-bs-toggle="dropdown" aria-expanded="false">Comparisons</a>
                     <ul class="dropdown-menu py-2" aria-labelledby="navbarDropdown">
-                        <li><a class="dropdown-item py-3" href="#"><i class="fa-solid fa-plus"></i> T.LY vs
-                            Bitly</a></li>
+                        <li><a class="dropdown-item py-3" href="#"><i class="fa-solid fa-plus"></i> T.LY vs Bitly</a>
+                        </li>
                         <li><a class="dropdown-item py-3" href="#"><i class="fa-solid fa-link"></i> Bitly
                             Alternatives</a></li>
                         <li><a class="dropdown-item py-3" href="#"><i class="fa-brands fa-google"></i> Google URL
-                            Shortener
-                            Alternatives</a></li>
-                        <li><a class="dropdown-item py-3" href="#"><i class="fa-solid fa-compress"></i> T.LY vs
-                            TinyURL</a></li>
-                        <li><a class="dropdown-item py-3" href="#"><i class="fa-solid fa-list-ul"></i> Best URL
-                            Shortener API</a>
+                            Shortener Alternatives</a></li>
+                        <li><a class="dropdown-item py-3" href="#"><i class="fa-solid fa-compress"></i> T.LY vs TinyURL</a>
                         </li>
+                        <li><a class="dropdown-item py-3" href="#"><i class="fa-solid fa-list-ul"></i> Best URL
+                            Shortener API</a></li>
                     </ul>
                 </li>
             </ul>
@@ -129,9 +113,9 @@
                             </div>
                             <div class="text-sm-center">
                                 By signing up, you agree to T.LY's <a href="/terms"
-                                    class="link-warning link-opacity-75-hover link-underline-opacity-75-hover link-underline-opacity-0">terms
+                                                                      class="link-warning link-opacity-75-hover link-underline-opacity-75-hover link-underline-opacity-0">terms
                                 of service</a> and <a href="/privacy"
-                                    class="link-warning link-opacity-75-hover link-underline-opacity-75-hover link-underline-opacity-0">privacy
+                                                      class="link-warning link-opacity-75-hover link-underline-opacity-75-hover link-underline-opacity-0">privacy
                                 policy.</a>
                             </div>
                             <div class="text-sm-center">
@@ -145,20 +129,18 @@
         <div class="col-6 my-auto">
             <p class="lead">T.LY is the best link management service to track, brand, and share short URLs</p>
             <ul class="ps-0">
-                <li class="list-unstyled"><i class="fa-solid fa-circle-check"></i> Track your Short Links with
-                    Detailed Analytics
+                <li class="list-unstyled"><i class="fa-solid fa-circle-check"></i> Track your Short Links with Detailed
+                    Analytics
                 </li>
-                <li class="list-unstyled mt-1"><i class="fa-solid fa-circle-check"></i> Customizable and Trackable
-                    QR Codes
+                <li class="list-unstyled mt-1"><i class="fa-solid fa-circle-check"></i> Customizable and Trackable QR
+                    Codes
                 </li>
-                <li class="list-unstyled mt-1"><i class="fa-solid fa-circle-check"></i> Create Custom Short Links
-                </li>
+                <li class="list-unstyled mt-1"><i class="fa-solid fa-circle-check"></i> Create Custom Short Links</li>
                 <li class="list-unstyled mt-1"><i class="fa-solid fa-circle-check"></i> Bulk CSV Import URLs</li>
-                <li class="list-unstyled mt-1"><i class="fa-solid fa-circle-check"></i> Update URLs whenever you
-                    need to change their Destination
+                <li class="list-unstyled mt-1"><i class="fa-solid fa-circle-check"></i> Update URLs whenever you need to
+                    change their Destination
                 </li>
-                <li class="list-unstyled mt-1"><i class="fa-solid fa-circle-check"></i> Custom Domains with SSL
-                </li>
+                <li class="list-unstyled mt-1"><i class="fa-solid fa-circle-check"></i> Custom Domains with SSL</li>
                 <li class="list-unstyled mt-1"><i class="fa-solid fa-circle-check"></i> Team Management</li>
                 <li class="list-unstyled mt-1"><i class="fa-solid fa-circle-check"></i> Smart URLs</li>
                 <li class="list-unstyled mt-1"><i class="fa-solid fa-circle-check"></i> Zapier Integration</li>
@@ -171,17 +153,17 @@
     <div class="row">
         <div class="col-6">
             <blockquote class="blockquote">
-                <p class="mb-0">★★★★★ "I had another URL shortener that stopped working and needed another one to
-                    take its place. I found this one and it works great! I especially like the fact that it
-                    automatically adds the shortened URL to my clipboard manager."</p>
+                <p class="mb-0">★★★★★ "I had another URL shortener that stopped working and needed another one to take
+                    its place. I found this one and it works great! I especially like the fact that it automatically
+                    adds the shortened URL to my clipboard manager."</p>
             </blockquote>
             <figcaption class="blockquote-footer">Laura</figcaption>
         </div>
         <div class="col-6">
             <blockquote class="blockquote">
                 <p class="mb-0">★★★★★ "This is honestly one of the biggest lifesavers for me. We share links all the
-                    time for work and it makes it so easy and less daunting to deal with a link now given we have
-                    to send links to over 2,000 people. Thank you so much for this service!"</p>
+                    time for work and it makes it so easy and less daunting to deal with a link now given we have to
+                    send links to over 2,000 people. Thank you so much for this service!"</p>
             </blockquote>
             <figcaption class="blockquote-footer">Jessica</figcaption>
         </div>
@@ -198,19 +180,16 @@
                     </li>
                     <li class="pb-2"><a href="#"
                                         class="link-light link-underline-opacity-75-hover link-underline-opacity-0">API
-                        Docs</a>
-                    </li>
+                        Docs</a></li>
                     <li class="pb-2"><a href="#"
                                         class="link-light link-underline-opacity-75-hover link-underline-opacity-0">OR
-                        Code
-                        Generator</a></li>
+                        Code Generator</a></li>
                     <li class="pb-2"><a href="/tools"
                                         class="link-light link-underline-opacity-75-hover link-underline-opacity-0">Tools</a>
                     </li>
                     <li class="pb-2"><a href="/register"
                                         class="link-light link-underline-opacity-75-hover link-underline-opacity-0">Sign
-                        Up</a>
-                    </li>
+                        Up</a></li>
                 </ul>
             </div>
             <div class="col-4 text-light">

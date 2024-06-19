@@ -6,29 +6,16 @@ STATIC_DIR = os.path.abspath('/media/khoa/Download/FrontEnd_URL_Shortener/flaskr
 
 app = Flask(__name__)
 
+# Blueprint
 product_blueprint = Blueprint('products', __name__, template_folder='/templates', url_prefix='/products')
 tools_blueprint = Blueprint('tools', __name__, template_folder='/templates', url_prefix='/tools')
 password_blueprint = Blueprint('password', __name__, template_folder='/templates', url_prefix='/password')
 
 
+# root
 @app.route('/')
 def homepage():
     return render_template('index.html')
-
-
-@product_blueprint.route('/link-management')
-def link_management():
-    return render_template('link_management.html')
-
-
-@product_blueprint.route('/one-links')
-def one_links():
-    return render_template('OneLinks.html')
-
-
-@tools_blueprint.route('/screenshot-website')
-def screenshot_website():
-    return render_template('screenshot.html')
 
 
 @app.route('/blog')
@@ -56,16 +43,6 @@ def register():
     return render_template('sign_up.html')
 
 
-@password_blueprint.route('/reset')
-def reset():
-    return render_template('password_reset.html')
-
-
-@tools_blueprint.route('/')
-def tools():
-    return render_template('tool.html')
-
-
 @app.route('/privacy')
 def privacy():
     return render_template('privacy.html')
@@ -86,6 +63,35 @@ def contact():
     return render_template('contact.html')
 
 
+# products
+@product_blueprint.route('/link-management')
+def link_management():
+    return render_template('link_management.html')
+
+
+@product_blueprint.route('/one-links')
+def one_links():
+    return render_template('OneLinks.html')
+
+
+# password
+@password_blueprint.route('/reset')
+def reset():
+    return render_template('password_reset.html')
+
+
+# tools
+@tools_blueprint.route('/')
+def tools():
+    return render_template('tool.html')
+
+
+@tools_blueprint.route('/screenshot-website')
+def screenshot_website():
+    return render_template('screenshot.html')
+
+
+# Blueprint register
 app.register_blueprint(product_blueprint)
 app.register_blueprint(tools_blueprint)
 app.register_blueprint(password_blueprint)

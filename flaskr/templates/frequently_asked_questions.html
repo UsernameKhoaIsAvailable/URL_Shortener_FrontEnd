@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <title>Frequently Asked Questions about T.LY URL Shortener</title>
     <meta charset="utf-8"/>
@@ -9,81 +8,61 @@
     <link rel="icon" href="{{ url_for('static', filename='img/tly-high-resolution-favicon.png') }}" type="image/png"
           sizes="32x32">
 </head>
-
 <body>
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="container-sm">
         <a class="navbar-brand" href="/">
             <img src="{{ url_for('static', filename='img/tly-high-resolution-logo.png') }}" height="35" alt="">
         </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                       data-bs-toggle="dropdown" aria-expanded="false">
-                        Products
-                    </a>
+                       data-bs-toggle="dropdown" aria-expanded="false">Products</a>
                     <ul class="dropdown-menu py-2" aria-labelledby="navbarDropdown">
                         <li><a class="dropdown-item py-3" href="/products/link-management"><i
-                                class="fa-solid fa-link"></i> Link
-                            Management</a></li>
+                                class="fa-solid fa-link"></i> Link Management</a></li>
                         <li><a class="dropdown-item py-3" href="/products/one-links"><i
-                                class="fa-solid fa-square-arrow-up-right"></i>
-                            OneLinks</a>
+                                class="fa-solid fa-square-arrow-up-right"></i>OneLinks</a></li>
+                        <li><a class="dropdown-item py-3" href="#"><i class="fa-solid fa-qrcode"></i> QR Code Generator</a>
                         </li>
-                        <li><a class="dropdown-item py-3" href="#"><i class="fa-solid fa-qrcode"></i> QR Code
-                            Generator</a></li>
                         <li><a class="dropdown-item py-3" href="https://t.ly/extension"><i
-                                class="fa-brands fa-chrome"></i> Link
-                            Shortener
-                            Extension</a></li>
+                                class="fa-brands fa-chrome"></i> Link Shortener Extension</a></li>
                         <li><a class="dropdown-item py-3" href="/tools/screenshot-website"><i
-                                class="fa-solid fa-image"></i> Screenshot
-                            Website</a></li>
+                                class="fa-solid fa-image"></i> Screenshot Website</a></li>
                     </ul>
                 </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                       data-bs-toggle="dropdown" aria-expanded="false">
-                        Resources
-                    </a>
+                       data-bs-toggle="dropdown" aria-expanded="false">Resources</a>
                     <ul class="dropdown-menu py-2" aria-labelledby="navbarDropdown">
                         <li><a class="dropdown-item py-3" href="/blog"><i class="fa-solid fa-rss"></i> Blog</a></li>
-                        <li><a class="dropdown-item py-3" href="#"><i class="fa-solid fa-chevron-right"></i><b>_</b>
-                            API
+                        <li><a class="dropdown-item py-3" href="#"><i class="fa-solid fa-chevron-right"></i><b>_</b>API
                             Documentation</a></li>
-                        <li><a class="dropdown-item py-3" href="/faq"><i class="fa-solid fa-circle-question"></i>
-                            Frequently Asked
-                            Questions</a></li>
-                        <li><a class="dropdown-item py-3" href="/affiliates"><i class="fa-solid fa-handshake"></i>
-                            Affiliate
-                            Program</a>
-                        </li>
+                        <li><a class="dropdown-item py-3" href="/faq"><i class="fa-solid fa-circle-question"></i>Frequently
+                            Asked Questions</a></li>
+                        <li><a class="dropdown-item py-3" href="/affiliates"><i class="fa-solid fa-handshake"></i>Affiliate
+                            Program</a></li>
                     </ul>
                 </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                       data-bs-toggle="dropdown" aria-expanded="false">
-                        Comparisons
-                    </a>
+                       data-bs-toggle="dropdown" aria-expanded="false">Comparisons</a>
                     <ul class="dropdown-menu py-2" aria-labelledby="navbarDropdown">
-                        <li><a class="dropdown-item py-3" href="#"><i class="fa-solid fa-plus"></i> T.LY vs
-                            Bitly</a></li>
+                        <li><a class="dropdown-item py-3" href="#"><i class="fa-solid fa-plus"></i> T.LY vs Bitly</a>
+                        </li>
                         <li><a class="dropdown-item py-3" href="#"><i class="fa-solid fa-link"></i> Bitly
                             Alternatives</a></li>
                         <li><a class="dropdown-item py-3" href="#"><i class="fa-brands fa-google"></i> Google URL
-                            Shortener
-                            Alternatives</a></li>
-                        <li><a class="dropdown-item py-3" href="#"><i class="fa-solid fa-compress"></i> T.LY vs
-                            TinyURL</a></li>
-                        <li><a class="dropdown-item py-3" href="#"><i class="fa-solid fa-list-ul"></i> Best URL
-                            Shortener API</a>
+                            Shortener Alternatives</a></li>
+                        <li><a class="dropdown-item py-3" href="#"><i class="fa-solid fa-compress"></i> T.LY vs TinyURL</a>
                         </li>
+                        <li><a class="dropdown-item py-3" href="#"><i class="fa-solid fa-list-ul"></i> Best URL
+                            Shortener API</a></li>
                     </ul>
                 </li>
             </ul>
@@ -128,28 +107,27 @@
                     <p>Yes, you can easily create short URLs using Zapier. Check out the <a
                             href="https://zapier.com/apps/tly-link-shortener/integrations"
                             class="link-warning link-opacity-75-hover link-underline-opacity-75-hover link-underline-opacity-0"
-                            target="_blank">integration
-                        here.</a></p>
+                            target="_blank">integration here.</a></p>
                     <h4>Does T.LY support bulk shortening of links?</h4>
                     <p>Yes, we allow users to upload CSV files to bulk shorten URLs. To get started, please <a
                             href="/register"
                             class="link-warning link-opacity-75-hover link-underline-opacity-75-hover link-underline-opacity-0">register
                         an account.</a></p>
                     <h4>Can I set a link to expire?</h4>
-                    <p>Yes, a expire date or number of views can be added to any short url. After the date/view
-                        count, the link will no longer work.</p>
+                    <p>Yes, an expire date or number of views can be added to any short url. After the date/view count,
+                        the link will no longer work.</p>
                     <h4>What are Smart URLs?</h4>
-                    <p>Smart URLs redirect users to different destinations based on their location, device, or
-                        browser. This allows you to share one URL to target multiple destinations. Here is an
-                        example that will redirect users based on their device to the Link Shortener extension
-                        install page depending on their browser. Give it a try: <a href="https://t.ly/extension"
-                                                                                   class="link-warning link-opacity-75-hover link-underline-opacity-75-hover link-underline-opacity-0">https://t.ly/extension</a>
+                    <p>Smart URLs redirect users to different destinations based on their location, device, or browser.
+                        This allows you to share one URL to target multiple destinations. Here is an example that will
+                        redirect users based on their device to the Link Shortener extension install page depending on
+                        their browser. Give it a try: <a href="https://t.ly/extension"
+                                                         class="link-warning link-opacity-75-hover link-underline-opacity-75-hover link-underline-opacity-0">https://t.ly/extension</a>
                     </p>
                     <h4>Can I create free short URLs?</h4>
                     <p>Yes, T.LY allows users to create short urls from the <a href="/"
-                                                                               class="link-warning link-opacity-75-hover link-underline-opacity-75-hover link-underline-opacity-0">homepage</a>
-                        and <a href="https://t.ly/extension"
-                               class="link-warning link-opacity-75-hover link-underline-opacity-75-hover link-underline-opacity-0">extension.</a>
+                                                                               class="link-warning link-opacity-75-hover link-underline-opacity-75-hover link-underline-opacity-0">homepage</a>and
+                        <a href="https://t.ly/extension"
+                           class="link-warning link-opacity-75-hover link-underline-opacity-75-hover link-underline-opacity-0">extension.</a>
                     </p>
                     <h4>Do we offer Yearly Plans?</h4>
                     <img src="{{ url_for('static', filename='img/yearly-plans.png') }}" class="img-fluid" alt="">
@@ -157,15 +135,15 @@
                                                                                                         class="link-warning link-opacity-75-hover link-underline-opacity-75-hover link-underline-opacity-0">manage
                         subscription page.</a></p>
                     <h4>Can I add my own custom domain?</h4>
-                    <p>Yes T.LY is a url shortener that supports custom domains. Adding your own domain is a great
-                        way to brand urls. You must <a href="/register"
-                                                       class="link-warning link-opacity-75-hover link-underline-opacity-75-hover link-underline-opacity-0">create
+                    <p>Yes T.LY is an url shortener that supports custom domains. Adding your own domain is a great way
+                        to brand urls. You must <a href="/register"
+                                                   class="link-warning link-opacity-75-hover link-underline-opacity-75-hover link-underline-opacity-0">create
                             an account</a> to add your own domain.</p>
                     <h4>How do I fix DNS_PROBE_FINISHED_BAD_CONFIG Error?</h4>
                     <p>If you are experiencing this error, we recommend you update your local DNS records to either
                         Cloudflare or Google's DNS. Please refer to this <a href="#"
-                                                                            class="link-warning link-opacity-75-hover link-underline-opacity-75-hover link-underline-opacity-0">guide</a>
-                        for additional information.</p>
+                                                                            class="link-warning link-opacity-75-hover link-underline-opacity-75-hover link-underline-opacity-0">guide</a>for
+                        additional information.</p>
                     <h4>Do you have a browser extension?</h4>
                     <p>Yes, we have a browser extension that works for <a href="https://t.ly/extension"
                                                                           class="link-warning link-opacity-75-hover link-underline-opacity-75-hover link-underline-opacity-0">Chrome,
@@ -175,70 +153,63 @@
                                                                                                        class="link-warning link-opacity-75-hover link-underline-opacity-75-hover link-underline-opacity-0">see
                         this guide.</a></p>
                     <h4>What happens to my links when my trial or plan expires?</h4>
-                    <p>Your links will be in a frozen state until your account subscription is reactivated. You will
-                        not be able to manage your links or browse to them until you have an active subscription.
-                    </p>
+                    <p>Your links will be in a frozen state until your account subscription is reactivated. You will not
+                        be able to manage your links or browse to them until you have an active subscription.</p>
                     <h4>How do I edit a short links?</h4>
                     <p>To edit short links, you have to <a href="/register"
-                                                           class="link-warning link-opacity-75-hover link-underline-opacity-75-hover link-underline-opacity-0">
-                        create an account.</a> From the link dashboard you can update any short link. You can
-                        change the URL ending, destination URL, add a password, and auto expire a short link.</p>
+                                                           class="link-warning link-opacity-75-hover link-underline-opacity-75-hover link-underline-opacity-0">create
+                        an account.</a> From the link dashboard you can update any short link. You can change the URL
+                        ending, destination URL, add a password, and auto expire a short link.</p>
                     <h4>How the redirection is made?</h4>
-                    <p>T.LY has a database that associates the long url with a short url. When a user tries to
-                        access the short url, the browser will instantly redirect to the original page (long url).
-                    </p>
+                    <p>T.LY has a database that associates the long url with a short url. When a user tries to access
+                        the short url, the browser will instantly redirect to the original page (long url).</p>
                     <h4>How can I Expand a Short link?</h4>
                     <p><a href="https://linkunshorten.com/"
                           class="link-warning link-opacity-75-hover link-underline-opacity-75-hover link-underline-opacity-0">Link
-                        Unshortener</a> supports all link shortening services and will programmatically follow
-                        url redirects to their final destination. Enter a short link to will discover the final
-                        destination. Use <a href="https://linkunshorten.com/"
-                                            class="link-warning link-opacity-75-hover link-underline-opacity-75-hover link-underline-opacity-0">Link
+                        Unshortener</a> supports all link shortening services and will programmatically follow url
+                        redirects to their final destination. Enter a short link to will discover the final destination.
+                        Use <a href="https://linkunshorten.com/"
+                               class="link-warning link-opacity-75-hover link-underline-opacity-75-hover link-underline-opacity-0">Link
                             Unshortener</a> to review short links before browsing to them.</p>
                     <h4>Does T.LY support Two Factor Authenication(2FA)?</h4>
-                    <p>T.LY places a strong emphasis on security and supports Two-Factor Authentication (2FA),
-                        enhancing the security of user accounts. This feature adds an extra layer of protection by
-                        requiring a second form of verification, such as a code from an app, in addition to the
-                        standard username and password. The option of 2FA helps prevent unauthorized access,
-                        ensuring that even if a password is compromised, the account remains secure. Two-Factor
-                        Authentication (2FA) demonstrates our commitment to user security and trust, making T.LY a
-                        reliable choice for managing and sharing shortened URLs.
-                    </p>
+                    <p>T.LY places a strong emphasis on security and supports Two-Factor Authentication (2FA), enhancing
+                        the security of user accounts. This feature adds an extra layer of protection by requiring a
+                        second form of verification, such as a code from an app, in addition to the standard username
+                        and password. The option of 2FA helps prevent unauthorized access, ensuring that even if a
+                        password is compromised, the account remains secure. Two-Factor Authentication (2FA)
+                        demonstrates our commitment to user security and trust, making T.LY a reliable choice for
+                        managing and sharing shortened URLs.</p>
                     <h4>How long will my T.LY URL be available?</h4>
-                    <p>Our URL shortening service at T.LY offers reliable and secure short links that do not expire
-                        as long as they are created and maintained per our Terms of Use. If your link is created
-                        under an account, a valid subscription is required to remain active.
-                    </p>
+                    <p>Our URL shortening service at T.LY offers reliable and secure short links that do not expire as
+                        long as they are created and maintained per our Terms of Use. If your link is created under an
+                        account, a valid subscription is required to remain active.</p>
                     <h4>Will URL Shorteners hurt my site's SEO?</h4>
-                    <p>No, using T.LY, does not hurt your SEO. Google and other search engines will pass pagerank
-                        value to the final url rather than the short link. 301 redirect is a permanent redirect from
-                        one URL to another. 301 redirects send site visitors and search engines to a different URL
-                        than the one they originally typed into their browser or selected from a search engine
-                        results page.
-                    </p>
+                    <p>No, using T.LY does not hurt your SEO. Google and other search engines will pass pagerank value
+                        to the final url rather than the short link. 301 redirect is a permanent redirect from one URL
+                        to another. 301 redirects send site visitors and search engines to a different URL than the one
+                        they originally typed into their browser or selected from a search engine results page.</p>
                     <h4>My Pixel Tracking is Not Working</h4>
-                    <p>Ad-blockers or browser extensions can interfere with pixel tracking. These tools are designed
-                        to block advertisements and scripts from loading on web pages, including tracking pixels.
-                        When a user has an ad-blocker or similar extension enabled, it can prevent the pixel code
-                        from being executed, resulting in inaccurate tracking data. Ad-blockers and browser
-                        extensions are widely used, with a significant portion of internet users relying on them to
-                        enhance their browsing experience and protect their privacy. As marketers, it's important to
-                        acknowledge the impact of these tools on pixel tracking and respect the privacy of users.
-                    </p>
+                    <p>Ad-blockers or browser extensions can interfere with pixel tracking. These tools are designed to
+                        block advertisements and scripts from loading on web pages, including tracking pixels. When a
+                        user has an ad-blocker or similar extension enabled, it can prevent the pixel code from being
+                        executed, resulting in inaccurate tracking data. Ad-blockers and browser extensions are widely
+                        used, with a significant portion of internet users relying on them to enhance their browsing
+                        experience and protect their privacy. As marketers, it's important to acknowledge the impact of
+                        these tools on pixel tracking and respect the privacy of users.</p>
                     <h4>Does Google still have a URL shortener?</h4>
                     <p>No, <a href="#"
                               class="link-warning link-opacity-75-hover link-underline-opacity-75-hover link-underline-opacity-0">Google
-                        discontinued its URL shortener service in 2019.</a> The URL shortener was used by many
-                        people to shorten long links, and this made it easier to share links on social media and
-                        other platforms. Google announced on March 30, 2018, the discontinuation of the service on
-                        March 30, 2019.</p>
+                        discontinued its URL shortener service in 2019.</a> The URL shortener was used by many people to
+                        shorten long links, and this made it easier to share links on social media and other platforms.
+                        Google announced on March 30, 2018, the discontinuation of the service on March 30, 2019.</p>
                     <h4>How do I submit a feature request?</h4>
                     <p>Please send feature request to <a href="mailto:support@t.ly?Subject=Feature+Request"
                                                          class="link-warning link-opacity-75-hover link-underline-opacity-75-hover link-underline-opacity-0">support@t.ly</a>
                     </p>
                     <h4>I need additional help</h4>
-                    <p>Please contact support for additional assistance. <a href="mailto:support@t.ly?Subject=FAQ+Support"
-                                                                            class="link-warning link-opacity-75-hover link-underline-opacity-75-hover link-underline-opacity-0">support@t.ly</a>
+                    <p>Please contact support for additional assistance. <a
+                            href="mailto:support@t.ly?Subject=FAQ+Support"
+                            class="link-warning link-opacity-75-hover link-underline-opacity-75-hover link-underline-opacity-0">support@t.ly</a>
                     </p>
                 </div>
             </div>
@@ -307,7 +278,7 @@
                                         class="link-light link-underline-opacity-75-hover link-underline-opacity-0">Facebook</a>
                     </li>
                     <li class="pb-2"><a href="https://t.ly/linkedin"
-                                        class="link-light link-underline-opacity-75-hover link-underline-opacity-0">Linkedln</a>
+                                        class="link-light link-underline-opacity-75-hover link-underline-opacity-0">LinkedIn</a>
                     </li>
                 </ul>
             </div>
@@ -317,5 +288,4 @@
 <script src="{{ url_for('static', filename='js/bootstrap.bundle.min.js') }}"></script>
 <script src="https://kit.fontawesome.com/f3d396c665.js" crossorigin="anonymous"></script>
 </body>
-
 </html>
